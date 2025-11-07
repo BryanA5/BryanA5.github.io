@@ -1,0 +1,998 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* home section */
+.home-section{
+    width: 100%;
+    min-height: 100vh; /* Cambiado a min-height para ajustarse al contenido */
+    padding-bottom: 100px; /* Espacio para evitar colisión con el footer */
+    background-color: #F0F0F0;
+}
+
+
+
+
+/* navbar */
+#navbar{
+    background-color: #FFA800;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 2px 5px;
+}
+/* LINEAS SEPARADORAS - NAVBAR*/
+#narbar li,.Naviniciosesion{
+    border-right: 2px solid #000000;
+}
+
+#narbar li,.Navubicacion{
+    border-right: 2px solid #000000;
+}
+
+#narbar li,.Navcuenta{
+    border-right: 2px solid #000000;
+}
+
+@media (max-width:991px){
+    #narbar li,.Naviniciosesion{
+        border-right: none;
+    }
+    
+    #narbar li,.Navubicacion{
+        border-right: none;
+    }
+    
+    #narbar li,.Navcuenta{
+        border-right: none;
+    }
+}
+
+
+/* LETRAS */
+#navbar .nav-link{
+    color: rgb(0, 0, 0);
+    font-weight: medium;
+    margin-left: 5px;
+}
+/* Puntero a las letras efecto */
+#navbar .nav-link:hover{
+    color: white;
+    border-radius: 5px;
+}
+/* Opciones de barra*/
+.dropdown li a{
+    color: rgb(0, 0, 0);
+}
+
+/* Barra Busqueda */
+#navbar .box{
+    max-width: 700px;
+    width: 100%;
+}
+
+.box .search-box{
+    position: relative;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.search-box input{
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.search-box .icon{
+    cursor: pointer;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: #000000;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+@media (max-width:1420px){
+    #navbar .nav-link .prueba{
+        display: none;
+    }
+}
+
+/* footer */
+
+#footer{
+    padding: 0 0 0 0;
+    color: #fff;
+    font-size: 14px;
+    background: #FFA800;
+    font-family: "Inter", sans-serif;
+}
+
+#footer .footer-top{
+    padding: 30px 0 0;
+    background: #FFA800;
+    color: white;
+}
+
+#footer .footer-top h4{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+    color: white;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li{
+    padding-right: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child{
+    padding: 0;
+}
+
+#footer .footer-top .footer-links ul li a{
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul li a:hover{
+    border-radius: 5px;
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+
+#footer .copyright{
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 1;
+    /* float: left; */
+}
+
+#footer .credits{
+    /*float: right; */
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#footer .footer-bajo a{
+    color: white;
+}
+
+#footer .footer-bajo a:hover{
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+/* navbar-categoria */
+#navbar-categoria{
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 2px 5px;
+}
+
+#navbar-categoria .text{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+
+
+/* NAVBAR MENU START*/
+
+/* Ancho fijo para el menú de categorías */
+#menuLateral {
+    width: 250px; /* Ancho del menú de categorías */
+}
+
+#menuLateral .offcanvas-header{
+    background: #EEEDED;
+    border-top: 6px solid #FFC107;
+}
+
+#menuLateral .offcanvas-header button{
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+/* Ancho mayor para el submenú de empresas para mostrar 3 columnas */
+#subMenu1 {
+    width: 700px; /* Ancho suficiente para mostrar 3 empresas en cada fila */
+}
+
+/* Estilos generales */
+.offcanvas-body ul li {
+    padding: 0.5rem 0;
+}
+
+.category-link {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid transparent;
+}
+
+.category-link:hover {
+    background-color: #f0f0f0;
+    border-left: 4px solid #ffa500; /* Cambia el color según tus necesidades */
+}
+
+/* OPCIONES DE EMPRESAS*/
+
+#subMenu1 .conten_cabezera{
+    background: rgb(255,168,0);
+    background: linear-gradient(90deg, rgba(255,168,0,1) 0%, rgba(255,216,142,1) 100%);
+    padding: 1%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 50px;
+}
+
+#subMenu1Label{
+    color: white;
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    position: relative;
+    padding-left: 15%;
+}
+
+/* Ajustes para mostrar tres columnas de empresas */
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaciado entre las columnas */
+}
+
+/* Flexbox para las empresas dentro de cada fila */
+.company {
+    flex: 1 1 30%; /* Ajustamos para que ocupe 30% del espacio, permitiendo tres columnas */
+}
+
+/* Estilos de la empresa */
+.company h6 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+
+.company a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 0.25rem;
+    font-size: 13px;
+}
+
+.company a:hover {
+    color: #ffa500; /* Color de hover para enlaces */
+}
+
+@media (max-width: 768px) {
+    .company {
+        flex: 1 1 45%; /* Dos columnas para pantallas más pequeñas */
+    }
+    #subMenu1 .conten_cabezera{
+        background: rgb(255,168,0);
+        background: linear-gradient(90deg, rgba(255,168,0,1) 0%, rgba(255,216,142,1) 100%);
+        padding: 1%;
+        width: 280px;
+    }
+    
+    #subMenu1Label{
+        color: white;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-weight: bolder;
+        position: relative;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .company {
+        flex: 1 1 100%; /* Una columna para pantallas muy pequeñas */
+    }
+}
+
+/* SideBar MENU START */
+
+
+
+#MenuStart{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+
+#MenuStart .menu-text{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width:991px){
+    #MenuStart .opcion-nav{
+        font-size: 10px;
+        flex-wrap:nowrap
+    }
+    #MenuStart .menu-text{
+        font-size: 10px;
+    }
+} 
+
+    
+/* CARD - PRODUCTOS */
+
+#product-cards{
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+#product-cards .card{
+    border-radius: 5%;
+    height: 100%;
+}
+#product-cards .row{
+    margin-top: 0px;
+}
+
+#product-cards h1{
+    color: black;
+    font-size: 30px;
+}
+#product-cards .card img{
+    width: 150px;
+    height: 150px;
+    margin-top: 12px;
+}
+#product-cards .card h5{
+    font-size: 12px;
+    color: black;
+    margin-top: -10px;
+    height: 24%;
+}
+#product-cards .card .precio{
+    font-size: 20px;
+    color: #444444;
+    margin-top: -10px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+#product-cards .card p{
+    font-size: 10px;
+    color: #7A7A7A;
+    
+}
+
+#product-cards .card .btn{
+    background: #30313D;
+    color: #ffffff;
+    text-decoration: none;
+    padding: auto;
+    margin: auto;
+}
+
+#product-cards .star {
+    text-align: end;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#product-cards .star i{
+    margin-left: 1px;
+    font-size: 13px;
+}
+
+#product-cards .checked{
+    color: #FFC107;
+}
+
+@media screen and (max-width: 991px){
+    #product-cards{
+        margin-top: 20px;
+    }
+    #product-cards h1{
+        font-size: 20px;
+    }
+    #product-cards .card h5{
+        font-size: 8px;
+    }
+    #product-cards .card p{
+        font-size: 8px;
+        margin-bottom: -1px;
+    }
+    #product-cards .card img{
+        margin-top: 5px;
+        width: 100px;
+        height: 100px;
+    }
+    #product-cards .card a{
+        font-size: 10px;
+    }
+    #product-cards .row{
+        margin-top: 20px;
+    }
+    #product-cards .card .precio{
+        font-size: 15px;
+        margin-top: 5px;
+        text-align: left;
+        margin-bottom: 3px;
+    }
+    .star i{
+        font-size: 8px;
+    }
+    .star {
+        text-align: end;
+        margin-right: 15px;
+        margin-top: 2px;
+    }
+    #product-cards .card .btn{
+        padding: auto;
+        margin-bottom: -10px;
+    }
+}
+
+/* PRODUCTO DETALLE */
+
+
+#contentDetalle{
+    width: 100%;
+    height: 90vh;
+}
+
+#contentDetalle .DetalleProduc{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+#contentDetalle .col{
+    flex-basis: 45%;
+}
+#contentDetalle .slider{
+    height: 80vh;
+    display: flex;
+}
+#contentDetalle .product{
+    align-content: center;
+}
+#contentDetalle .product img{
+    height: 13vh;
+    width: 13vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: #30313D;
+}
+
+#contentDetalle .product img:hover{
+    opacity: 1;
+    box-shadow: 0px 4px 3px -1px rgb(168, 168, 168);
+}
+
+#contentDetalle .preview{
+    position: relative;
+}
+
+#contentDetalle .preview img{
+    height: 90%;
+    width: 530px;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 30px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+#contentDetalle .preview::after {
+    display: var(--display);
+    content: '';
+    width: 530px;
+    height: 90%;
+    background-color: black;
+    background-image: var(--url);
+    background-size: var(--background-scale); /* Escala dinámica */
+    background-position: var(--zoom-x) var(--zoom-y);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    margin-top: 30px;
+    transition: background-size 0.3s ease; /* Transición más fluida */
+}
+
+#contentDetalle .brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+#contentDetalle .star{
+    display: flex;
+    height: 15px;
+}
+#contentDetalle .star .fa-star{
+    color: #FFC107;
+}
+
+#contentDetalle .star span{
+    color: #5E5E5E;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+#contentDetalle nav ol li{
+    font-family: "Inter", sans-serif;
+}
+
+#contentDetalle nav li a{
+    font-family: "Inter", sans-serif;
+    color: #5E5E5E;
+    text-decoration: none;
+}
+#contentDetalle nav li a:hover{
+    color: #5E5E5E;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contentDetalle input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contentDetalle .DetalleProduc .content{
+    font-family: "Inter", sans-serif;
+}
+
+#contentDetalle .DetalleProduc .content .likes i{
+    background: #EEEEEE;
+    padding: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#contentDetalle button{
+    color: #fff;
+    font-size: 17px;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    background: #30313D;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 600;
+    width: 40%;
+    height: 8%;
+    margin-top: 10px;
+}
+
+/* ESPECIFICACIONES */
+
+#espeficifaciones{
+    width: 100%;
+    height: 40vh;
+    font-family: "Inter", sans-serif;
+}
+
+#espeficifaciones .row{
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+/* CLASIFICACION - COMENTARIOS*/
+
+#clasificacion{
+    width: 100%;
+    height: 110vh;
+    font-family: "Inter", sans-serif;
+}
+
+#clasificacion .row{
+    width: 90%;
+    height: 110vh;
+    margin: auto; 
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 2%;
+}
+
+#clasificacion .row .row{
+    height: 100%;
+    margin-top: 0%;
+    width: 100%;
+}
+
+#clasificacion .row .row .left{
+    justify-items: center;
+}
+
+#clasificacion .row .row .left .star{
+    color: #FFC107;
+    font-size: 13px;
+}
+
+#clasificacion .row .row .barra{
+    font-size: 15px;
+}
+
+#clasificacion .row .row .barra i{
+    font-size: 13px;
+    color: #4F6172;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#clasificacion .row .row .right{
+    margin-right: -25px;
+    padding-right: 0%;
+}
+
+#clasificacion .row .row .right div{
+    border: 2px solid #F7B500;
+    margin-left: 55%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#clasificacion .row .row .right i{
+    color: #F7B500;
+    margin-left: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#clasificacion .row .container{
+    margin-top: 0;
+}
+
+#clasificacion .row .container .star i{
+    color: #FFC107;
+}
+
+#clasificacion .row .container .likes i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#clasificacion .row .container .likes span{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#contentDetalle .content .precionegro .position-relative span{
+    top: -75px; left: 85%; transform: translateX(-50%); font-size: 0.75em;
+}
+
+/* AJUSTAR PANTALLA RESPONSIVE */ /* Empieza de aqui*/
+
+@media only screen and (max-width: 991px) {
+    
+    .home-section{
+        width: 100%;
+        height: 530vh; 
+    }
+    #contentDetalle {
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Ajuste de breadcrumb */
+    #contentDetalle nav {
+        margin: 10px auto;
+        font-size: 12px;
+    }
+    #contentDetalle nav .breadcrumb-item {
+        font-size: 10px;
+    }
+
+    #contentDetalle .DetalleProduc {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        /*padding: 10px;*/
+        text-align: center;
+    }
+
+    #contentDetalle .DetalleProduc .slider .product{
+        margin-top: 40px;
+    }
+
+    #contentDetalle .DetalleProduc .slider .product img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #contentDetalle .DetalleProduc .slider .preview{
+        margin-top: 50px;
+    }
+
+    #contentDetalle .content{
+        font-size: 14px;
+        border-top: 1px solid rgb(241, 241, 241);
+        margin-top: 20px;
+    }
+
+    #contentDetalle .content .brand {
+        font-size: 10px;
+        margin-top: 20px;
+        margin-left: 40%;
+        margin-bottom: -10px;
+    }
+
+    #contentDetalle .DetalleProduc .content .star{
+        margin-left: 25%;
+    }
+
+    #contentDetalle .content h5 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    /* Ajuste de precios y likes */
+    .d-flex.likes {
+        /*flex-direction: column;*/
+        align-items: center;
+    }
+
+    .d-flex.likes p {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    /* Ajuste de precios */
+    .d-flex.align-items-baseline {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contentDetalle .content .preciorojo h5, 
+    #contentDetalle .content .preciorojo h1 {
+        font-size: 14px;
+    }
+
+    #contentDetalle .content .precionegro h5,
+    #contentDetalle .content .precionegro h1 {
+        font-size: 14px;
+    }
+
+    #contentDetalle .content .precionegro span{
+        margin-left: -5px;
+        margin-right: -10px;
+    }
+
+    #contentDetalle .content .precionegro .position-relative span{
+        top: -90px;
+        left: 20px;
+    }
+
+    #contentDetalle .col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contentDetalle .slider {
+        height: auto;
+        justify-content: center;
+    }
+
+    #contentDetalle .product img {
+        height: 10vh;
+        width: 10vh;
+        margin: 5px;
+    }
+
+    #contentDetalle .preview img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #contentDetalle .brand {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    #contentDetalle .star span {
+        font-size: 12px;
+    }
+
+    #contentDetalle button {
+        width: 60%;
+        font-size: 15px;
+    }
+    #contentDetalle .buttondiseño{
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(241, 241, 241);
+    }
+
+    #contentDetalle .detalletext{
+        text-align: start;
+    }
+
+    #contentDetalle .detalletext p{
+        padding-left: 35px;
+    }
+
+
+    /* ESPECIFICACIONES */
+
+    #espeficifaciones {
+        height: auto;
+    }
+
+    #espeficifaciones .row {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #espeficifaciones .row img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    #espeficifaciones .row .col-lg-5 h5{
+        margin-top: 10px;
+    }
+    #espeficifaciones .row .col-lg-5 th{
+        font-size: 13px;
+    }
+    #espeficifaciones .row .col-lg-5 td{
+        font-size: 13px;
+    }
+
+    /* CLASIFICACION - COMENTARIOS */
+
+    #clasificacion {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #clasificacion .row {
+        /*flex-direction: column;*/
+        padding: 10px;
+        height: auto;
+    }
+
+    #clasificacion .estadisticas{
+        margin-top: 10px;
+    }
+
+    #clasificacion .estadisticas .row {
+        flex-direction: column;
+    }
+
+    #clasificacion .estadisticas .row .left{
+        width: 140px;
+    }
+
+    #clasificacion .row .left h1 {
+        font-size: 24px;
+        display: inline;
+        margin-right: 5px;
+    }
+
+    #clasificacion .row .left .text-muted {
+        font-size: 14px;
+    }
+
+    #clasificacion .row .left .star {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-left: 10%;
+    }
+    #clasificacion .row .left .star i{
+        font-size: 13px;
+    }
+
+    #clasificacion .row .left p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 5px;
+        display: inline;
+    }
+
+    /* Ajuste de "Califica este producto" */
+    #clasificacion .row .right {
+        width: 100%;
+    }
+    /* Alineación en una sola fila para "Califica este producto" */
+    #clasificacion .row .right .d-flex.align-items-center {
+        margin: 0;
+        align-items: center;
+        width: 250px;
+        margin-left: -10px;
+    }
+    
+
+    #clasificacion .row .left {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #clasificacion .row .barra {
+        width: 100%;
+    }
+
+
+    #clasificacion .right p.m-0 {
+        margin-right: 10px; /* Espacio entre el texto y las estrellas */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        font-size: 12px;
+    }
+
+    #clasificacion .right .d-flex.align-items-center .fa-star{
+        font-size: 13px; /* Ajusta el tamaño de las estrellas si es necesario */
+        color: #F7B500; /* Color amarillo de las estrellas */
+        margin-right: 1px; /* Espacio entre las estrellas */
+    }
+
+    /* Comentarios */
+
+    #clasificacion .row .container p{
+        font-size: 12px;
+    }
+    #clasificacion .row .container .col .likes i,
+    #clasificacion .row .container .col span{
+        font-size: 18px;
+    }
+    #clasificacion .row .container .col i{
+        font-size: 9px;
+    }
+    #clasificacion .row .container .col h5{
+        font-size: 15px;
+    }
+
+}
+

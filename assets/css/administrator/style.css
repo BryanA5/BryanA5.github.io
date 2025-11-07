@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden; /* Esto previene el scroll */
+  }
+
+  .container-fluid {
+    height: 100vh; /* Ocupa toda la ventana sin scroll */
+  }
+
+  .full-image {
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  .center-image{
+    height: 60px;
+    margin-top: 8%;
+  }
+
+  .text-column {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.custom-button {
+    background-color: #ffa800; /* Cambia esto al tono que desees */
+    border-color: #ffa800; /* Asegura que el borde también sea del mismo color */
+    color: white; /* Cambia el color del texto si es necesario */
+}
+
+.custom-button:hover {
+    background-color: #ffc551; /* Cambia el color al pasar el mouse si deseas */
+    border-color: #ffc551;
+    color: white; /* Cambia el color del texto si es necesario */
+}
