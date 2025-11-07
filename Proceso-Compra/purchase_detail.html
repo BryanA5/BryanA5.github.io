@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDERSOFT2</title>
+    <link rel="shortcut icon" type="image" href="/assets/img/client/Logo2.png">
+    <link rel="stylesheet" href="/assets/css/client/style.css">
+    <!--<link rel="stylesheet" href="/assets/libs/font-awesome/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- bootstrap links-->
+    <link href="/assets/libs/bootstrap/bootstrapcliente.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap-icons-cliente.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap links-->
+    <!-- Fuentes (inter) links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/assets/libs/font-awesome/css2.css" rel="stylesheet">
+    <!-- Fuentes (inter) links-->
+</head>
+<body>
+        <div class="home-section">
+
+        
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/Sistema Cliente/index.html"><img src="/assets/img/client/Logo.png" width="200px" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Barra busqueda -->
+                        <div class="box ms-auto d-none d-lg-block">
+                            <div class="search-box">
+                                <form class="d-flex" id="search-box">
+                                    <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                    <label class="icon">
+                                        <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Barra busqueda -->
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <!-- Inicio sesion -->
+                            <li class="nav-item dropdown Naviniciosesion">
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hola,<br> <strong>Inicia sesión</strong>
+                                </a>
+                                <a class="nav-link dropdown-toggle d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-top: 1px solid rgba(0, 0, 0, 0.1);" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hola, Inicia sesión
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffff;">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesión</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#registermodal">Registrarse</a></li>
+                                </ul>
+                            </li>
+                            <!-- Inicio sesion -->
+                            
+
+                            <!-- Ubicacion -->
+                            <li class="nav-item d-none d-lg-block Navubicacion">
+                                <a class="nav-link active" href="#">
+                                    <label>
+                                        <i style="font-size: 45px; margin-top: 4%; cursor: pointer;" class="fa-solid fa-location-dot"></i>
+                                    </label>
+                                    <label class="prueba" style="cursor: pointer; margin-left: 5px;">Selecciona<br> <strong>tu ubicación</strong></label> 
+                                </a>
+                            </li> 
+                            <li class="nav-item d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                                <a class="nav-link" href="#">Selecciona tu ubicación</a>
+                            </li>
+                            <!-- Ubicacion -->
+
+                            
+                            <!-- Cuenta Icon -->
+                            <li class="nav-item dropdown Navcuenta">
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i style="font-size: 45px; margin-top: 4%;" class="fa-solid fa-circle-user"></i>
+                                </a>
+                                <a class="nav-link dropdown-toggle d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cuenta
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  #ffffff;">
+                                <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Mis compras</a></li>
+                                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Cuenta Icon -->
+                            
+                            <!-- Carrito -->
+                            
+                                <li class="nav-item d-none d-lg-block">
+                                    <a href="index.html" class="nav-link" href="#">
+                                        <i style="font-size: 42px; margin-top: 6%;" class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-block d-sm-none">
+                                    <a class="nav-link" href="#">Carrito de compras</a>
+                                </li>
+                            
+                            <!-- Carrito -->
+                        </ul> 
+                        <!-- Barra busqueda Responsive-->
+                        <div class="box ms-auto d-block d-sm-none" style="margin-top: 2%;">
+                            <div class="search-box">
+                                <form class="d-flex" id="search-box">
+                                    <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                    <label  class="icon">
+                                        <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </label>
+                                </form>
+                            </div>
+                        </div> 
+                        <!-- Barra busqueda Responsive-->
+                    </div>
+                </div>
+            </nav>
+            <!-- NAVBAR -->
+
+            <!-- MENU START -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="MenuStart">
+                <!-- NAV CONTAINER START -->
+                <div class="container-fluid bg-light">
+                    <div class="container-fluid bg-light position-relative">
+                        <!-- NAV BUTTON  -->
+                        <div class="d-flex justify-content-between align-items-center p-2">
+                            <!-- NAV BUTTON (A la izquierda) -->
+                            <div class="d-flex align-items-center">
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" style="color: black;">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                                <span class="ms-3 menu-text"><strong>Menu</strong></span>
+                            </div>
+                
+                            <!-- OTRAS OPCIONES (centradas y siempre horizontales) -->
+                            <div class="flex-grow-1 d-flex justify-content-center">
+                                <a href="#" class="mx-4 text-decoration-none opcion-nav" style="color: black;"><i class="fa-solid fa-certificate"></i><strong> Ofertas Especiales</strong></a>
+                                <a href="#" class="mx-4 text-decoration-none text-black opcion-nav" style="color: black;"><i class="fa-solid fa-star"></i><strong> Nuevos Lanzamientos</strong></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+                    <!-- OFFCANVAS MAIN CONTAINER START -->
+                    <section
+                        class="offcanvas offcanvas-start" style="background: white; width: 350px;"
+                        id="menuLateral"
+                        tabindex="-1"
+                    >
+                        <div class="offcanvas-header" data-bs-theme="dark" style="background: #f6f6f6;border-top: 6px solid #FFC107;">
+                            <h5 class="offcanvas-title" style="color: #535353;">¡Hola, Usuario!</h5>
+                            <button
+                                class="btn-close"
+                                type="button"
+                                aria-label="Close"
+                                data-bs-dismiss="offcanvas"
+                            ></button>
+                        </div>
+                        <!-- OFF CANVAS MENU LINKS  START-->
+                        <div class="d-flex flex-column justify-content-between px-0 contenerdorMenu">
+                            <ul class=" fs-5 justify-content-evenly" style="margin-top: 3%;">
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Tornilleria<i class="bi bi-chevron-right"></i></a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Cerrajeria y<br> Candado<i class="bi bi-chevron-right"></i></a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Accesorios<br> para autos</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Aceites, grasos<br>y lubricantes</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Herramientas<br>manuales</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Brocas, discos<br>lijas y cierras</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Cintas</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Construcción</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Aditivos y<br>pegamentos</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Accesorios<br>de ferreteria</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Limpieza<br>y desinfección</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item p-3 py-md-1">
+                                    <a href="" class="nav-link">Dados<br>y puntas</a>
+                                    <ul class="conten_categoria">
+                                        <div class="row">
+                                            <div class="col-md-9 conten_cabezera">
+                                                <h3>Oportunidades Unicas</h3>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><h6 class="dropdown-header">Ferrechincha</h6></li>
+                                                <li><a href="#">Empresa 1</a></li>
+                                                <li><a href="#">prueba 1</a></li>
+                                                <li><a href="#">prueba 2</a></li>
+                                                <li><a href="#">prueba 3</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- OFFCANVAS MAIN CONTAINER END  -->
+                </div>
+            </nav>
+            <!-- MENU END -->
+            
+
+                    <!-- BODY START -->
+        <div class="container mt-5">
+            <h2 class="mb-4">Mis compras</h2>
+            <!-- Filtros y barra de búsqueda -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <label for="search"><a href="#" class="text-decoration-none">Compras online</a></label>
+                    <input id="search" type="text" class="form-control" placeholder="Buscar por Nº de Pedido">
+                </div>
+                <div>
+                    <label for="filterDate">Filtros por fecha:</label>
+                    <select class="form-select" id="filterDate" style="max-width: 120px;">
+                        <option value="2024" selected>2024</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Detalle de compra -->
+            <div class="order-card d-flex flex-column flex-md-row justify-content-between align-items-center p-4 mb-4">
+                <div class="col-md-8 col-12 border-end mb-3 mb-md-0">
+                    <p class="mb-1"><strong>Llega el Martes 23 de Septiembre.</strong></p>
+                    <div class="d-flex align-items-center">
+                        <img src="/assets/img/client/Productos/unnamed.png" alt="Producto" class="me-3">
+                        <div>
+                            <p class="mb-0">Alicate 8 Pela Cables Automática 22 A 10 AWG</p>
+                            <p class="text-muted mb-0">1 un.<br> S/ 45.99</p>
+                            <p class="text-muted">Vendido por: <a href="#" class="text-warning text-decoration-none">Ferrechincha</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex flex-column align-items-center m-2">
+                    <button class="btn btn-outline-secondary btn-sm mb-2 w-100 rounded-pill">Solicitudes y reclamos</button>
+                    <button class="btn btn-outline-secondary btn-sm w-100 rounded-pill">Boleta y otros documentos</button>
+                </div>
+            </div>
+            <!-- Seguimiento y Envío -->
+            <div class="row">
+        <div class="col-md-8 mb-4">
+            <div class="order-tracking p-4">
+                <h5>Seguimiento del pedido</h5>
+
+                <div class="d-flex justify-content-between align-items-center my-3" >
+                    <div class="tracking-step text-center">
+                        <div class="step-circle completed"></div>
+                        <p class="mt-2 mb-0" style="font-size: 0.65rem;">Solicitud recibida</p>
+                        <small class="text-muted" style="font-size: 0.65rem;">23/09</small>
+                    </div>
+                    <div class="tracking-step text-center">
+                        <div class="step-circle completed"></div>
+                        <p class="mt-2 mb-0" style="font-size: 0.65rem;">En preparación</p>
+                        <small class="text-muted" style="font-size: 0.65rem;">23/09</small>
+                    </div>
+                    <div class="tracking-step text-center">
+                        <div class="step-circle completed"></div>
+                        <p class="mt-2 mb-0" style="font-size: 0.65rem;">En camino</p>
+                        <small class="text-muted" style="font-size: 0.65rem;">24/09</small>
+                    </div>
+                    <div class="tracking-step text-center">
+                        <div class="step-circle"></div>
+                        <p class="mt-2 mb-0" style="font-size: 0.65rem;">Entregado</p>
+                        <small class="text-muted" style="font-size: 0.65rem;">24/09</small>
+                    </div>
+                </div>
+                <p class="text-muted small">24/09 - 17:25<br>Ya entregamos tu pedido.</p> 
+                <p class="text-muted small">24/09 - 16:10<br>Tu pedido está en camino.</p>
+                <p class="text-muted small">23/09 - 14:00<br>Terminamos de preparar tu pedido, ya no puedes cancelarlo.</p>
+                <p class="text-muted small">23/09 - 11:25<br>Recibimos tu solicitud de compra, pronto empezaremos a preparar tu pedido.</p>
+                <a href="#" class="text-decoration-none">Mostrar menos</a>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="shipping-info p-4">
+                <h5>Envío a domicilio</h5>
+                <p class="text-muted mb-1"><b>Dirección: </b>Avenida Jose Claya, 217, Casa 2017-03 Chincha Alta, Chincha, Ica.</p>
+                <p class="text-muted mb-1"><b>Horario: </b>entre 9:00 y 21:00 horas</p>
+                <p class="text-muted"><b>Quién recibe: </b>Alexander Castilla</p>
+            </div>
+        </div>
+
+            </div>
+        </div>
+        <!-- BODY END -->
+
+
+
+
+        <!-- MODAL - LOGIN -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 side-image">
+                        
+                                <!-------------      image     ------------->
+                                
+                            </div>
+                            <div class="col-md-6 right">
+                                
+                                <div class="input-box"> 
+                                
+                                    <header>
+                                        Login
+                                        <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="font-size: 15px;margin-top: 25px;margin-right: 25px;"></button>
+                                    </header>
+                                    <div id="emailHelp" class="form-text textoPrueba">Ingresa tu correo electronico y tu contraseña para acceder a tu cuenta</div>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                                            <input type="email" class="form-control shadow-none" id="exampleInputEmail1" placeholder="Ingresa tu Correo Electronico" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Ingresa tu Contraseña">
+                                        </div> 
+                                        <button type="submit" class="submit">Ingresar</button>
+                                        
+                                        <div class="mb-3 form-check">
+                                            <span>¿No tienes una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#registermodal">Registrate aqui</a></span>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <!-- MODAL - LOGIN -->
+
+        <!-- MODAL - REGISTER -->
+        <div class="modal fade" id="registermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 side-image">
+                    
+                            <!-------------      image     ------------->
+                            
+                        </div>
+                        <div class="col-md-6 right">
+                            
+                            <div class="input-box"> 
+                            
+                                <header>
+                                    Registro
+                                    <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="font-size: 15px;margin-top: 25px;margin-right: 25px;"></button>
+                                </header>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nombres y Apellidos</label>
+                                        <input class="form-control" type="text" placeholder="Ingresa tus nombres y apellidos" aria-label="default input example">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                                        <input type="email" class="form-control shadow-none" id="exampleInputEmail1" placeholder="Ingresa tu Correo Electronico" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Número de Celular</label>
+                                        <input class="form-control" type="text" placeholder="+51 000-000-000" aria-label="default input example">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Ingresa tu Contraseña">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Confirmar Contraseña</label>
+                                        <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Repite tu Contraseña">
+                                    </div> 
+                                    <button type="submit" class="submit">Ingresar</button>
+                                    
+                                </form>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- MODAL - REGISTER -->
+
+        </div>
+        
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Te ayudamos</h4>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-book-open"></i> Libro de reclamaciones</a></li>
+                            <li><a href=""><i class="fa-brands fa-whatsapp"></i> Atención por WhatsApp</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone-volume"></i> Centro de ayuda</a></li>
+                            <li><a href=""><i class="fa-solid fa-truck-fast"></i> Tipos de entrega</a></li>
+                            <li><a href=""><i class="fa-solid fa-rotate-left"></i> Cambios y devoluciones</a></li>
+                            <li><a href=""><i class="fa-regular fa-clipboard"></i> Seguimiento de mi orden</a></li>
+                            <li><a href=""><i class="fa-solid fa-wallet"></i> Boletas y facturas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Sé parte de SiderSof.com</h4>
+                        <ul>
+                            <li><a href="">Vende con nosotros</a></li>
+                            <li><a href="">Trabaja con nosotros</a></li>
+                            <li><a href="">Venta empresa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Únete a nuestros programas</h4>
+                        <ul>
+                            <li><a href="">Cyber WOW 2024</a></li>
+                            <li><a href="">Hot Sale</a></li>
+                            <li><a href="">Black Friday</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Nuestras empresas</h4>
+                        <ul>
+                            <li><a href="">Ferreteria Jireh</a></li>
+                            <li><a href="">Ferreteria El Principe</a></li>
+                            <li><a href="">Ferrechincha</a></li>
+                            <li><a href="">Ferreteria F Y R Union</a></li>
+                            <li><a href="">Ferreteria y Printuras Guille's</a></li>
+                            <li><a href="">Ferreteria Don Ricardo</a></li>
+                            <li><a href="">SiderSof</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bajo" style="background: #E39600; padding-top: 10px;">
+            <div class="container mx-auto">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <a href=""><i style="font-size: 35px;" class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Términos y condiciones</a></div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de cookies</a></div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de privacidad</a></div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <div class="copyright">
+                    &copy; TODOS LOS DERECHOS RESERVADOS
+                </div>
+                <div class="credits">
+                    Brilark.com S.A.C. Maz C. Lot. 13 OTR. Upis San Andres - Ica, Chincha, Pueblo Nuevo
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

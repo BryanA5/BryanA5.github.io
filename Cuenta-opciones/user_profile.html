@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDERSOFT</title>
+    <link rel="shortcut icon" type="image" href="/assets/img/client/Logo2.png">
+    <link rel="stylesheet" href="/assets/css/client/Cuenta-Opciones/style_userprofile.css">
+    <!--<link rel="stylesheet" href="/assets/li s/font-awesome/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- bootstrap links-->
+    <link href="/assets/libs/bootstrap/bootstrapcliente.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap-icons-cliente.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap links-->
+    <!-- Fuentes (inter) links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/assets/libs/font-awesome/css2.css" rel="stylesheet">
+    <!-- Fuentes (inter) links-->
+</head>
+<body>
+    <div class="home-section">
+
+    
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/Sistema Cliente/sesion_iniciada.html"><img src="/assets/img/client/Logo.png" width="200px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Barra busqueda -->
+                    <div class="box ms-auto d-none d-lg-block">
+                        <div class="search-box">
+                            <form class="d-flex" id="search-box">
+                                <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                <label class="icon">
+                                    <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Barra busqueda -->
+                    <ul class="navbar-nav ms-auto mb-lg-0">
+                        <!-- Inicio sesion -->
+                        <li class="nav-item dropdown Naviniciosesion">
+                            <a class="nav-link d-none d-lg-block" role="button" aria-expanded="false" style="padding-right: 20px;">
+                            Hola,<br> <strong>Alexander</strong>
+                            </a>
+                            <a class="nav-link   d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-top: 1px solid rgba(0, 0, 0, 0.1);" href="#" role="button"  aria-expanded="false">
+                                Hola, Alexander
+                            </a>
+
+                        </li>
+                        <!-- Inicio sesion -->
+                        
+
+                        <!-- Ubicacion -->
+                        <li class="nav-item d-none d-lg-block Navubicacion">
+                            <a class="nav-link active" href="/Sistema Cliente/Cuenta-opciones/Direccion_profile.html">
+                                <label>
+                                    <i style="font-size: 45px; margin-top: 4%; cursor: pointer;" class="fa-solid fa-location-dot"></i>
+                                </label>
+                                <label class="prueba" style="cursor: pointer; margin-left: 5px;">Selecciona<br> <strong>tu ubicación</strong></label> 
+                            </a>
+                        </li> 
+                        <li class="nav-item d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                            <a class="nav-link" href="/Sistema Cliente/Cuenta-opciones/Direccion_profile.html">Selecciona tu ubicación</a>
+                        </li>
+                        <!-- Ubicacion -->
+
+                        
+                        <!-- Cuenta Icon -->
+                        <li class="nav-item dropdown Navcuenta">
+                            <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i style="font-size: 45px; margin-top: 4%;" class="fa-solid fa-circle-user"></i>
+                            </a>
+                            <a class="nav-link dropdown-toggle d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cuenta
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  #ffffff;">
+                            <li><a class="dropdown-item" href="/Sistema Cliente/Cuenta-opciones/user_profile.html">Mi perfil</a></li>
+                            <li><a class="dropdown-item" href="/Sistema Cliente/record_purchase.html">Mis compras</a></li>
+                            <li><a class="dropdown-item" href="/Sistema Cliente/index.html">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Cuenta Icon -->
+                        
+                        <!-- Carrito -->
+                        
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link" href="/Sistema Cliente/Proceso-Compra/shopping_cart.html">
+                                    <i style="font-size: 42px; margin-top: 6%;" class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item d-block d-sm-none">
+                                <a class="nav-link" href="/Sistema Cliente/Proceso-Compra/shopping_cart.html">Carrito de compras</a>
+                            </li>
+                        
+                        <!-- Carrito -->
+                    </ul> 
+                    <!-- Barra busqueda Responsive-->
+                    <div class="box ms-auto d-block d-sm-none" style="margin-top: 2%;">
+                        <div class="search-box">
+                            <form class="d-flex" id="search-box">
+                                <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                <label  class="icon">
+                                    <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </label>
+                            </form>
+                        </div>
+                    </div> 
+                    <!-- Barra busqueda Responsive-->
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MENU START -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="MenuStart">
+            <!-- NAV CONTAINER START -->
+            <div class="container-fluid bg-light">
+                <div class="container-fluid bg-light position-relative">
+                    <!-- NAV BUTTON  -->
+                    <div class="d-flex justify-content-between align-items-center p-2">
+                        <!-- NAV BUTTON (A la izquierda) -->
+                        <div class="d-flex align-items-center">
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" style="color: black;">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                            <span class="ms-3 menu-text"><strong>Menu</strong></span>
+                        </div>
+            
+                        <!-- OTRAS OPCIONES (centradas y siempre horizontales) -->
+                        <div class="flex-grow-1 d-flex justify-content-center">
+                            <a href="#" class="mx-4 text-decoration-none opcion-nav" style="color: black;"><i class="fa-solid fa-certificate"></i><strong> Ofertas Especiales</strong></a>
+                            <a href="#" class="mx-4 text-decoration-none text-black opcion-nav" style="color: black;"><i class="fa-solid fa-star"></i><strong> Nuevos Lanzamientos</strong></a>
+                        </div>
+                    </div>
+                </div>
+    
+            
+                <!-- Offcanvas para el menú de categorías -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="menuLateralLabel">¡Hola, Usuario!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu1">Tornillería<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu2">Cerrajería y Candado<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Accesorios para autos<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Aceites, grasos y lubricantes<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Herramientas manuales<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Brocas, discos, lijas y cierras<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Cintas<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3"> Construcción<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Aditivos y pegamentos<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Accesorios de ferreteria<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Limpieza y desinfección<i class="bi bi-chevron-right"></i></a></li>
+                            <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Dados y puntas<i class="bi bi-chevron-right"></i></a></li>
+                            <!-- Agrega más categorías según lo necesites -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Offcanvas para el submenú de empresas (Subcategoría de Tornillería) -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="subMenu1" aria-labelledby="subMenu1Label">
+                    <div class="offcanvas-header">
+                        <div class="col-md-9 align-items-center conten_cabezera">
+                            <h5 id="subMenu1Label">Oportunidades Únicas</h5>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="company-list">
+                            <div class="company">
+                                <h6>Ferrechinca</h6>
+                                <a href="#">Philips</a>
+                                <a href="#">3M</a>
+                                <a href="#">Trebol</a>
+                                <a href="#">Anypsa</a>
+                                <a href="#">Truper</a>
+                            </div>
+                            <div class="company">
+                                <h6>Ferreteria El Principe</h6>
+                                <a href="#">Celima</a>
+                                <a href="#">Tekno</a>
+                                <a href="#">Soldimix</a>
+                                <a href="#">Euroturbo</a>
+                                <a href="#">Chema</a>
+                            </div>
+                            <div class="company">
+                                <h6>Ferreteria F y R Union</h6>
+                                <a href="#">DeWalt</a>
+                                <a href="#">Stanley</a>
+                                <a href="#">Pretul</a>
+                                <a href="#">Truper</a>
+                                <a href="#">ItalGriff</a>
+                            </div>
+                            <!-- Agrega más empresas según lo necesites -->
+                            <div class="company">
+                                <h6>Ferretera Cerro Fortaleza</h6>
+                                <a href="#">Eternit</a>
+                                <a href="#">Cantol</a>
+                                <a href="#">Brosch</a>
+                                <a href="#">Evans</a>
+                                <a href="#">Euroluz</a>
+                            </div>
+                            <div class="company">
+                                <h6>Ferreteria Q & S Hermanos</h6>
+                                <a href="#">Sika</a>
+                                <a href="#">3M</a>
+                                <a href="#">Soldimix</a>
+                                <a href="#">Trebol</a>
+                                <a href="#">Chema</a>
+                            </div>
+                            <div class="company">
+                                <h6>Ferreteria Abarca</h6>
+                                <a href="#">Stanley</a>
+                                <a href="#">Eternit</a>
+                                <a href="#">Evans</a>
+                                <a href="#">Philips</a>
+                                <a href="#">Anypsa</a>
+                            </div>
+                            <!-- Agrega más empresas según lo necesites -->
+                            <div class="company">
+                                <h6>Conecsa Distribuidores S.A</h6>
+                                <a href="#">Terkno</a>
+                                <a href="#">Celima</a>
+                                <a href="#">Pretul</a>
+                                <a href="#">ItalGriff</a>
+                                <a href="#">Brosch</a>
+                            </div>
+                            <div class="company">
+                                <h6>Ferreteria Florcita</h6>
+                                <a href="#">Truper</a>
+                                <a href="#">Euroturbo</a>
+                                <a href="#">DeWalt</a>
+                                <a href="#">Cantol</a>
+                                <a href="#">Evans</a>
+                            </div>
+                            <div class="company">
+                                <h6>Ferricenter Leon</h6>
+                                <a href="#">Sika</a>
+                                <a href="#">Eternit</a>
+                                <a href="#">Stanley</a>
+                                <a href="#">Chema</a>
+                                <a href="#">Soldimix</a>
+                            </div>
+                            <!-- Agrega más empresas según lo necesites -->
+                            <div class="company">
+                                <h6>Ferreteria Don Ricardo</h6>
+                                <a href="#">Trebol</a>
+                                <a href="#">3M</a>
+                                <a href="#">Philips</a>
+                                <a href="#">Anypsa</a>
+                                <a href="#">Tekno</a>
+                            </div>
+                            <div class="company">
+                                <h6>Ferreteria Gianima</h6>
+                                <a href="#">Celima</a>
+                                <a href="#">Pretul</a>
+                                <a href="#">ItalGriff</a>
+                                <a href="#">Bosch</a>
+                                <a href="#">EuroLuz</a>
+                            </div>
+                            <div class="company">
+                                <h6>Multipernos Sercosev</h6>
+                                <a href="#">Truper</a>
+                                <a href="#">Euroturbo</a>
+                                <a href="#">DeWalt</a>
+                                <a href="#">Cantol</a>
+                                <a href="#">Pretur</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- OFFCANVAS MAIN CONTAINER END  -->
+            </div>
+        </nav>
+        <!-- MENU START -->
+
+    <!-- BODY PAGINA -->
+
+    <div class="container mt-5 CuentaConteiner">
+        <h2>Mi cuenta</h2>
+
+        <!-- Información del usuario -->
+        <div class="user-info d-flex align-items-center p-3 mb-4">
+            <div class="user-avatar me-3">
+                <i class="fa-solid fa-circle-user" style="font-size: 50px; color: #AEB0BF;"></i>
+            </div>
+            <div>
+                <p class="mb-0">HOLA</p>
+                <h5 class="mb-0">Alexander Castilla</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar de navegación -->
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills sidebar ">
+                    <a href="#" class="nav-link d-flex active justify-content-between align-items-center">
+                        <span><i class="fa-solid fa-user"></i>Datos personales
+                        </span>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="/Sistema Cliente/Cuenta-opciones/configuration_profile.html" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-lock"></i>Configurar mi cuenta
+                        </span>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="/Sistema Cliente/record_purchase.html" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-bag-check"></i>Mis compras
+                        </span>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="/Sistema Cliente/Cuenta-opciones/Direccion_profile.html" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-geo-alt"></i>Dirección
+                        </span>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="/Sistema Cliente/Cuenta-opciones/MetodPago_profile.html" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-cash"></i>Medios de pago
+                        </span>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="/Sistema Cliente/index.html" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-power"></i>Cerrar sesión
+                        </span>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección de contenido principal -->
+            
+            <div class="col-md-9">
+                <form class="needs-validation" novalidate id="passwordForm">
+                    <div class="content-section p-4 border">
+                        <h3 class="mb-4">Datos personales</h3>
+        
+                        <!-- Contraseña Actual y Nueva Contraseña -->
+                        <div class="row mb-3">
+                            <div class="col-md-4 mb-3">
+                                <label for="inputNombre" class="form-label">Nombre</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Alexander" value="Alexander">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="inputApellido" class="form-label">Primer apellido</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Castilla" value="Castilla">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="inputSegApellido" class="form-label">Segundo apellido</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Tasayco" value="Tasayco">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Repetir Nueva Contraseña -->
+                        <div class="row mb-4">
+                            <div class="col-md-4">
+                                <label for="typeDNI" class="form-label">Tipo de documento</label>
+                                <div class="input-group">
+                                    <input type="number" id="typeNumber" placeholder="DNI" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="typeNumber" class="form-label">Celular</label>
+                                <div class="input-group">
+                                    <span class="input-group-text toggle-password">(+51)</span>
+                                    <input type="number" id="floatingInputValue" class="form-control" value="999444777" min="0" step="1">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="inputEmail" class="form-label">Correo electrónico</label>
+                                <div class="input-group">
+                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Alexander@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Contenedor para el botón Cambiar Contraseña -->
+                    <div class="text-center mt-4 p-4 botoncontenedor">
+                        <button class="btn btn-dark btn-lg px-5 shadow-none" type="submit">Guardar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- BODY PAGINA-->
+    
+    </div>
+    
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Te ayudamos</h4>
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-book-open"></i> Libro de reclamaciones</a></li>
+                        <li><a href=""><i class="fa-brands fa-whatsapp"></i> Atención por WhatsApp</a></li>
+                        <li><a href=""><i class="fa-solid fa-phone-volume"></i> Centro de ayuda</a></li>
+                        <li><a href=""><i class="fa-solid fa-truck-fast"></i> Tipos de entrega</a></li>
+                        <li><a href=""><i class="fa-solid fa-rotate-left"></i> Cambios y devoluciones</a></li>
+                        <li><a href=""><i class="fa-regular fa-clipboard"></i> Seguimiento de mi orden</a></li>
+                        <li><a href=""><i class="fa-solid fa-wallet"></i> Boletas y facturas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Sé parte de SiderSof.com</h4>
+                    <ul>
+                        <li><a href="">Vende con nosotros</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Venta empresa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Únete a nuestros programas</h4>
+                    <ul>
+                        <li><a href="">Cyber WOW 2024</a></li>
+                        <li><a href="">Hot Sale</a></li>
+                        <li><a href="">Black Friday</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Nuestras empresas</h4>
+                    <ul>
+                        <li><a href="">Ferreteria Jireh</a></li>
+                        <li><a href="">Ferreteria El Principe</a></li>
+                        <li><a href="">Ferrechincha</a></li>
+                        <li><a href="">Ferreteria F Y R Union</a></li>
+                        <li><a href="">Ferreteria y Printuras Guille's</a></li>
+                        <li><a href="">Ferreteria Don Ricardo</a></li>
+                        <li><a href="">SiderSof</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bajo" style="background: #E39600; padding-top: 10px;">
+        <div class="container mx-auto">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-6">
+                    <a href=""><i style="font-size: 35px;" class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Términos y condiciones</a></div>
+                <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de cookies</a></div>
+                <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de privacidad</a></div>
+            </div>
+        </div>
+        <div class="container py-1">
+            <div class="copyright">
+                &copy; TODOS LOS DERECHOS RESERVADOS
+            </div>
+            <div class="credits">
+                Brilark.com S.A.C. Maz C. Lot. 13 OTR. Upis San Andres - Ica, Chincha, Pueblo Nuevo
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<!-- Footer -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Mostrar/Ocultar Contraseña -->
+<script>
+    document.querySelectorAll('.toggle-password').forEach(button => {
+    button.addEventListener('click', function () {
+        const input = this.previousElementSibling;
+        const icon = this.querySelector('i');
+        if (input.type === 'password') {
+            input.type = 'text';
+            icon.classList.remove('bi-eye-slash');
+            icon.classList.add('bi-eye');
+        } else {
+            input.type = 'password';
+            icon.classList.remove('bi-eye');
+            icon.classList.add('bi-eye-slash');
+        }
+    });
+});
+
+</script>
+
+
+<script>
+    const newPasswordInput = document.getElementById("newPassword");
+    const repeatPasswordInput = document.getElementById("repeatNewPassword");
+    const lengthCheck = document.getElementById("lengthCheck");
+    const spaceCheck = document.getElementById("spaceCheck");
+    const numberCheck = document.getElementById("numberCheck");
+    const passwordForm = document.getElementById("passwordForm");
+
+    function validatePasswordCriteria(password) {
+        let isValid = true;
+
+        // Verifica longitud mínima
+        if (password.length >= 8) {
+            lengthCheck.classList.add("text-success");
+            lengthCheck.classList.remove("text-muted", "text-danger");
+        } else {
+            lengthCheck.classList.add("text-danger");
+            lengthCheck.classList.remove("text-success", "text-muted");
+            isValid = false;
+        }
+
+        // Verifica que no haya espacios
+        if (!/\s/.test(password)) {
+            spaceCheck.classList.add("text-success");
+            spaceCheck.classList.remove("text-muted", "text-danger");
+        } else {
+            spaceCheck.classList.add("text-danger");
+            spaceCheck.classList.remove("text-success", "text-muted");
+            isValid = false;
+        }
+
+        // Verifica que contenga al menos un número
+        if (/\d/.test(password)) {
+            numberCheck.classList.add("text-success");
+            numberCheck.classList.remove("text-muted", "text-danger");
+        } else {
+            numberCheck.classList.add("text-danger");
+            numberCheck.classList.remove("text-success", "text-muted");
+            isValid = false;
+        }
+
+        // Actualiza la clase del input según la validación general
+        if (isValid) {
+            newPasswordInput.classList.add("is-valid");
+            newPasswordInput.classList.remove("is-invalid");
+        } else {
+            newPasswordInput.classList.add("is-invalid");
+            newPasswordInput.classList.remove("is-valid");
+        }
+
+        return isValid;
+    }
+
+    newPasswordInput.addEventListener("input", function () {
+        validatePasswordCriteria(newPasswordInput.value);
+    });
+
+    repeatPasswordInput.addEventListener("input", function () {
+        if (newPasswordInput.value === repeatPasswordInput.value) {
+            repeatPasswordInput.classList.add("is-valid");
+            repeatPasswordInput.classList.remove("is-invalid");
+        } else {
+            repeatPasswordInput.classList.add("is-invalid");
+            repeatPasswordInput.classList.remove("is-valid");
+        }
+    });
+
+    passwordForm.addEventListener("submit", function (event) {
+        const isPasswordValid = validatePasswordCriteria(newPasswordInput.value);
+        const doPasswordsMatch = newPasswordInput.value === repeatPasswordInput.value;
+
+        if (!isPasswordValid || !doPasswordsMatch) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            // Asegúrate de que el icono de check verde no aparezca si la validación falla
+            if (!isPasswordValid) {
+                newPasswordInput.classList.add("is-invalid");
+                newPasswordInput.classList.remove("is-valid");
+            }
+
+            if (!doPasswordsMatch) {
+                repeatPasswordInput.classList.add("is-invalid");
+                repeatPasswordInput.classList.remove("is-valid");
+            }
+        } else {
+            newPasswordInput.classList.add("is-valid");
+            repeatPasswordInput.classList.add("is-valid");
+        }
+
+        passwordForm.classList.add("was-validated");
+    });
+</script>
+
+
+</body>
+</html>
