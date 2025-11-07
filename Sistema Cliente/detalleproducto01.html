@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDERSOFT</title>
+    <link rel="shortcut icon" type="image" href="/assets/img/client/Logo2.png">
+    <link rel="stylesheet" href="/assets/css/client/style_detallePro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap links-->
+    <!-- Fuentes (inter) links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Fuentes (inter) links-->
+</head>
+<body>
+        <div class="home-section">
+
+        
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/Sistema Cliente/sesion_iniciada.html"><img src="/assets/img/client/Logo.png" width="200px" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Barra busqueda -->
+                        <div class="box ms-auto d-none d-lg-block">
+                            <div class="search-box">
+                                <form class="d-flex" id="search-box">
+                                    <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                    <label class="icon">
+                                        <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Barra busqueda -->
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <!-- Inicio sesion -->
+                            <li class="nav-item dropdown Naviniciosesion">
+                                <a class="nav-link d-none d-lg-block" role="button" aria-expanded="false" style="padding-right: 20px;">
+                                Hola,<br> <strong>Alexander</strong>
+                                </a>
+                                <a class="nav-link   d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-top: 1px solid rgba(0, 0, 0, 0.1);" href="#" role="button"  aria-expanded="false">
+                                    Hola, Alexander
+                                </a>
+
+                            </li>
+                            <!-- Inicio sesion -->
+                            
+
+                            <!-- Ubicacion -->
+                            <li class="nav-item d-none d-lg-block Navubicacion">
+                                <a class="nav-link active" href="/Sistema Cliente/Cuenta-opciones/Direccion_profile.html">
+                                    <label>
+                                        <i style="font-size: 45px; margin-top: 4%; cursor: pointer;" class="fa-solid fa-location-dot"></i>
+                                    </label>
+                                    <label class="prueba" style="cursor: pointer; margin-left: 5px;">Selecciona<br> <strong>tu ubicación</strong></label> 
+                                </a>
+                            </li> 
+                            <li class="nav-item d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                                <a class="nav-link" href="/Sistema Cliente/Cuenta-opciones/Direccion_profile.html">Selecciona tu ubicación</a>
+                            </li>
+                            <!-- Ubicacion -->
+
+                            
+                            <!-- Cuenta Icon -->
+                            <li class="nav-item dropdown Navcuenta">
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i style="font-size: 45px; margin-top: 4%;" class="fa-solid fa-circle-user"></i>
+                                </a>
+                                <a class="nav-link dropdown-toggle d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cuenta
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  #ffffff;">
+                                <li><a class="dropdown-item" href="/Sistema Cliente/Cuenta-opciones/user_profile.html">Mi perfil</a></li>
+                                <li><a class="dropdown-item" href="/Sistema Cliente/record_purchase.html">Mis compras</a></li>
+                                <li><a class="dropdown-item" href="/Sistema Cliente/index.html">Cerrar sesión</a></li>
+                                </ul>
+                            </li>
+                            
+                            <!-- Cuenta Icon -->
+                            
+                            <!-- Carrito -->
+                            
+                                <li class="nav-item d-none d-lg-block position-relative">
+                                    <a class="nav-link" href="../Sistema Cliente/Proceso-Compra/shopping_cart.html">
+                                        <i style="font-size: 42px; margin-top: 6%;" class="fa-solid fa-cart-shopping"></i>
+                                        <span id="cart-count" class="position-absolute top-14 start-90 translate-middle badge rounded-circle bg-danger d-none">
+                                            0
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-block d-sm-none">
+                                    <a class="nav-link" href="../Sistema Cliente/Proceso-Compra/shopping_cart.html">Carrito de compras</a>
+                                </li>
+                            
+                            <!-- Carrito -->
+                        </ul> 
+                        <!-- Barra busqueda Responsive-->
+                        <div class="box ms-auto d-block d-sm-none" style="margin-top: 2%;">
+                            <div class="search-box">
+                                <form class="d-flex" id="search-box">
+                                    <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                    <label  class="icon">
+                                        <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </label>
+                                </form>
+                            </div>
+                        </div> 
+                        <!-- Barra busqueda Responsive-->
+                    </div>
+                </div>
+            </nav>
+            <!-- NAVBAR -->
+
+            <!-- MENU START -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="MenuStart">
+                <!-- NAV CONTAINER START -->
+                <div class="container-fluid bg-light">
+                    <div class="container-fluid bg-light position-relative">
+                        <!-- NAV BUTTON  -->
+                        <div class="d-flex justify-content-between align-items-center p-2">
+                            <!-- NAV BUTTON (A la izquierda) -->
+                            <div class="d-flex align-items-center">
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" style="color: black;">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                                <span class="ms-3 menu-text"><strong>Menu</strong></span>
+                            </div>
+                
+                            <!-- OTRAS OPCIONES (centradas y siempre horizontales) -->
+                            <div class="flex-grow-1 d-flex justify-content-center">
+                                <a href="#" class="mx-4 text-decoration-none opcion-nav" style="color: black;"><i class="fa-solid fa-certificate"></i><strong> Ofertas Especiales</strong></a>
+                                <a href="#" class="mx-4 text-decoration-none text-black opcion-nav" style="color: black;"><i class="fa-solid fa-star"></i><strong> Nuevos Lanzamientos</strong></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+                    <!-- Offcanvas para el menú de categorías -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="menuLateralLabel">¡Hola, Usuario!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu1">Tornillería<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu2">Cerrajería y Candado<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Accesorios para autos<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Aceites, grasos y lubricantes<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Herramientas manuales<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Brocas, discos, lijas y cierras<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Cintas<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3"> Construcción<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Aditivos y pegamentos<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Accesorios de ferreteria<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Limpieza y desinfección<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Dados y puntas<i class="bi bi-chevron-right"></i></a></li>
+                                <!-- Agrega más categorías según lo necesites -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas para el submenú de empresas (Subcategoría de Tornillería) -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="subMenu1" aria-labelledby="subMenu1Label">
+                        <div class="offcanvas-header">
+                            <div class="col-md-9 align-items-center conten_cabezera">
+                                <h5 id="subMenu1Label">Oportunidades Únicas</h5>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="company-list">
+                                <div class="company">
+                                    <h6>Ferrechinca</h6>
+                                    <a href="#">Philips</a>
+                                    <a href="#">3M</a>
+                                    <a href="#">Trebol</a>
+                                    <a href="#">Anypsa</a>
+                                    <a href="#">Truper</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria El Principe</h6>
+                                    <a href="#">Celima</a>
+                                    <a href="#">Tekno</a>
+                                    <a href="#">Soldimix</a>
+                                    <a href="#">Euroturbo</a>
+                                    <a href="#">Chema</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria F y R Union</h6>
+                                    <a href="#">DeWalt</a>
+                                    <a href="#">Stanley</a>
+                                    <a href="#">Pretul</a>
+                                    <a href="#">Truper</a>
+                                    <a href="#">ItalGriff</a>
+                                </div>
+                                <!-- Agrega más empresas según lo necesites -->
+                                <div class="company">
+                                    <h6>Ferretera Cerro Fortaleza</h6>
+                                    <a href="#">Eternit</a>
+                                    <a href="#">Cantol</a>
+                                    <a href="#">Brosch</a>
+                                    <a href="#">Evans</a>
+                                    <a href="#">Euroluz</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Q & S Hermanos</h6>
+                                    <a href="#">Sika</a>
+                                    <a href="#">3M</a>
+                                    <a href="#">Soldimix</a>
+                                    <a href="#">Trebol</a>
+                                    <a href="#">Chema</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Abarca</h6>
+                                    <a href="#">Stanley</a>
+                                    <a href="#">Eternit</a>
+                                    <a href="#">Evans</a>
+                                    <a href="#">Philips</a>
+                                    <a href="#">Anypsa</a>
+                                </div>
+                                <!-- Agrega más empresas según lo necesites -->
+                                <div class="company">
+                                    <h6>Conecsa Distribuidores S.A</h6>
+                                    <a href="#">Terkno</a>
+                                    <a href="#">Celima</a>
+                                    <a href="#">Pretul</a>
+                                    <a href="#">ItalGriff</a>
+                                    <a href="#">Brosch</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Florcita</h6>
+                                    <a href="#">Truper</a>
+                                    <a href="#">Euroturbo</a>
+                                    <a href="#">DeWalt</a>
+                                    <a href="#">Cantol</a>
+                                    <a href="#">Evans</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferricenter Leon</h6>
+                                    <a href="#">Sika</a>
+                                    <a href="#">Eternit</a>
+                                    <a href="#">Stanley</a>
+                                    <a href="#">Chema</a>
+                                    <a href="#">Soldimix</a>
+                                </div>
+                                <!-- Agrega más empresas según lo necesites -->
+                                <div class="company">
+                                    <h6>Ferreteria Don Ricardo</h6>
+                                    <a href="#">Trebol</a>
+                                    <a href="#">3M</a>
+                                    <a href="#">Philips</a>
+                                    <a href="#">Anypsa</a>
+                                    <a href="#">Tekno</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Gianima</h6>
+                                    <a href="#">Celima</a>
+                                    <a href="#">Pretul</a>
+                                    <a href="#">ItalGriff</a>
+                                    <a href="#">Bosch</a>
+                                    <a href="#">EuroLuz</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Multipernos Sercosev</h6>
+                                    <a href="#">Truper</a>
+                                    <a href="#">Euroturbo</a>
+                                    <a href="#">DeWalt</a>
+                                    <a href="#">Cantol</a>
+                                    <a href="#">Pretur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- OFFCANVAS MAIN CONTAINER END  -->
+                </div>
+            </nav>
+            <!-- MENU START -->
+
+        <!-- BODY PAGINA -->
+
+            
+            <!-- DETALLE PRODUCTO -->
+            <div class="hero" id="contentDetalle">
+                <nav aria-label="breadcrumb" style="margin-left: 6%;margin-top: 2%; margin-bottom: -50px;">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Tienda</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">FUMIGADOR DE 20 L MANUAL DE MOCHILA</li>
+                    </ol>
+                </nav>
+                <div class="row DetalleProduc">
+                    <div class="col-lg-6">
+                        
+                        <div class="slider">
+                            <div class="product">
+        
+                                <img src="/assets/img/client/Detalle-Producto/det-prod-01.png" class="small-img" alt="" >
+                                <img src="/assets/img/client/Detalle-Producto/det-prod-02.png" class="small-img" alt="" >
+                                <img src="/assets/img/client/Detalle-Producto/det-prod-03.png" class="small-img" alt="" >
+                                <img src="/assets/img/client/Detalle-Producto/det-prod-04.png" class="small-img" alt="" >
+                            </div>
+                            <div class="preview" id="imageZoom" style="
+                            --url: url('/assets/img/client/Detalle-Producto//det-prod-01.png');
+                            --zoom-x: 0%; --zoom-y: 0%;
+                            --display: none">
+                                <img src="/assets/img/client/Detalle-Producto/det-prod-01.png" id="MainImg" alt="">
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="col-lg-6">
+        
+                        <div class="content">
+                            <p class="brand">TRUPER</p>
+                            <h5 class="py-4">Pulverizador Fumigador 20L Polietileno, Polipropileno 43x59cm</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <span>4.8(10) Calificar</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-4 " style="width: 90%;">
+                                <p class="m-0">Vendido por <span style="color: #FF8000; font-weight: 600;">Ferrechincha</span></p>
+
+                                <div class="d-flex align-items-baseline preciorojo" style="color: red;">
+                                    <h5 style="margin: 0;">S/</h5>
+                                    <h1 style="margin: 0 5px;">185.83</h1>
+                                    <h5 style="margin: 0;">/Unidad</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center precionegro" style="width: 90%;">
+                                <div class="d-flex likes">
+                                    <i class="fa-solid fa-plus" onclick="increment(this)"></i> 
+                                    <span class="like-count align-content-center" data-original-value="0">0</span>
+                                    <i class="fa-solid fa-minus" style="margin-left: 20px;" onclick="decrement(this)"></i>
+                                    <p class="m-0  align-content-center">Máximo 999 unidades</p>
+                                </div>
+                                <div class="d-flex align-items-baseline" style="color: black;">
+                                    <h5 style="margin: 0;">S/</h5>
+                                    <h1 style="margin: 0 5px;">255.99</h1>
+                                    <h5 style="margin: 0;">
+                                        Unidad
+                                        <span class="position-relative">
+                                            
+                                            <span class="badge bg-danger position-absolute">-23%</span>
+                                        </span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="buttondiseño">
+                            <a href="#">
+                                <button type="button">Agregar al Carro</button>
+                            </a>
+                            </div>
+                            <h4 class="mt-4 mb-3">Detalle del Producto</h4>
+                            <span class="detalletext" style="word-break: break-word;">
+                                    <ul>
+                                        <li>Lanza  de acero inoxidable</li>
+                                        <li>Boquilla ajustable (jet-cono)</li>
+                                        <li>Sistema de bombeo de pistón lateral</li>
+                                        <li>Correeas Acojinadas</li>
+                                        <li>Tanque traslúcido que permite ver el líquido</li>
+                                    </ul>
+                                    <p>Si compras <b>6 UNIDADES</b> o más obtiene un descuento por compra de PAQUETE</p>
+                            </span>
+                            
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESPECIFICACIONES -->
+
+            <div id="espeficifaciones" style="margin-top: -28px;">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div style="border-bottom: 1px solid rgb(0, 0, 0);">
+                            <h5 class="mb-4">Especificaciones</h5>
+                        </div>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr style="height: 50px;">
+                                    <th scope="row">Material_</th>
+                                    <td class="text-center">Polietileno, Polipropileno</td>
+                                </tr>
+                                <tr style="height: 50px;">
+                                    <th scope="row">Garantía_</th>
+                                    <td class="text-center">3 meses</td>
+                                </tr>
+                                <tr style="height: 50px;">
+                                    <th scope="row">Ancho</th>
+                                    <td class="text-center">43 cm</td>
+                                </tr>
+                                <tr style="height: 50px;">
+                                    <th scope="row">Alto</th>
+                                    <td class="text-center">59 cm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="text-center">
+                                <img src="/assets/img/client/Detalle-Producto/met-envios.png" style="width: 300px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLASIFIFACION - COMENTARIOS -->
+
+            <div id="clasificacion">
+                <div class="row">
+                    <div class="col estadisticas">
+                        <div style="border-bottom: 2px solid rgb(0, 0, 0);">
+                            <h5 class="mb-4">Comentarios de este producto</h5>
+                        </div>
+                        <div class="row" style="border-bottom: 2px solid rgb(243, 243, 243);">
+                            <div class="col-2 left">
+                                <div class="d-flex">
+                                    <h1>4.8</h1><p class="text-muted" style="align-content: end;">/5</p>
+                                </div>
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <p>10 comentarios</p>
+                            </div>
+                            <div class="col-3 barra ">
+                                <div class="d-flex align-items-center mb-1">
+                                    <span class="fs-sm text-muted">5<i class="fa-solid fa-star"></i></span>
+                                    <div class="progress d-inline-flex" style="width: 79%;height: 5px">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;background: #4F6172;"></div>  
+                                    </div>
+                                    <span class="fs-sm text-muted" style="margin-left: 5px;">8</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <span class="fs-sm text-muted">4<i class="fa-solid fa-star"></i></span>
+                                    <div class="progress d-inline-flex" style="width: 79%;height: 5px">
+                                        <div class="progress-bar" role="progressbar" style="width: 20%;background: #4F6172;"></div>  
+                                    </div>
+                                    <span class="fs-sm text-muted" style="margin-left: 5px;">2</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <span class="fs-sm text-muted">3<i class="fa-solid fa-star"></i></span>
+                                    <div class="progress d-inline-flex" style="width: 79%;height: 5px">
+                                        <div class="progress-bar" role="progressbar"></div>  
+                                    </div>
+                                    <span class="fs-sm text-muted" style="margin-left: 5px;">0</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <span class="fs-sm text-muted">2<i class="fa-solid fa-star"></i></span>
+                                    <div class="progress d-inline-flex" style="width: 79%;height: 5px">
+                                        <div class="progress-bar" role="progressbar"></div>  
+                                    </div>
+                                    <span class="fs-sm text-muted" style="margin-left: 5px;">0</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="fs-sm text-muted">1<i class="fa-solid fa-star"></i></span>
+                                    <div class="progress d-inline-flex" style="width: 79%;height: 5px">
+                                        <div class="progress-bar" role="progressbar"></div>  
+                                    </div>
+                                    <span class="fs-sm text-muted" style="margin-left: 5px;">0</span>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="col-7 right mb-auto bd-highlight" >
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <p class="m-0">Califica este producto:</p>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+                            <div class="col">
+                                <div class="p-3 border bg-light">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Precio / Calidad</h6>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3 text-muted">por Fernando Martinez</p>
+                                    <p>Me ha permitido cumplir con mis tareas en casa y en el campo, muy buen producto solo poco pequeño para mi gusto pero lo demas excelente.</p>
+                                    <div class="d-flex likes">
+                                        <i class="fa-regular fa-thumbs-up" onclick="toggleIcon(this)"></i> 
+                                        <span class="like-count" data-original-value="5">5</span>
+                                        <i class="fa-regular fa-thumbs-down fa-flip-horizontal" style="margin-left: 10px;" onclick="toggleIcon(this)"></i>
+                                        <span class="like-count" data-original-value="0">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3 border bg-light">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Precio / Calidad</h6>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3 text-muted">por Fernando Martinez</p>
+                                    <p>Me ha permitido cumplir con mis tareas en casa y en el campo, muy buen producto solo poco pequeño para mi gusto pero lo demas excelente.</p>
+                                    <div class="d-flex likes">
+                                        <i class="fa-regular fa-thumbs-up" onclick="toggleIcon(this)"></i> 
+                                        <span class="like-count" data-original-value="5">5</span>
+                                        <i class="fa-regular fa-thumbs-down fa-flip-horizontal" style="margin-left: 10px;" onclick="toggleIcon(this)"></i>
+                                        <span class="like-count" data-original-value="0">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3 border bg-light">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Precio / Calidad</h6>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3 text-muted">por Fernando Martinez</p>
+                                    <p>Me ha permitido cumplir con mis tareas en casa y en el campo, muy buen producto solo poco pequeño para mi gusto pero lo demas excelente.</p>
+                                    <div class="d-flex likes">
+                                        <i class="fa-regular fa-thumbs-up" onclick="toggleIcon(this)"></i> 
+                                        <span class="like-count" data-original-value="5">5</span>
+                                        <i class="fa-regular fa-thumbs-down fa-flip-horizontal" style="margin-left: 10px;" onclick="toggleIcon(this)"></i>
+                                        <span class="like-count" data-original-value="0">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="p-3 border bg-light">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Precio / Calidad</h6>
+                                        <div class="star">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3 text-muted">por Fernando Martinez</p>
+                                    <p>Me ha permitido cumplir con mis tareas en casa y en el campo, muy buen producto solo poco pequeño para mi gusto pero lo demas excelente.</p>
+                                    <div class="d-flex likes">
+                                        <i class="fa-regular fa-thumbs-up" onclick="toggleIcon(this)"></i> 
+                                        <span class="like-count" data-original-value="5">5</span>
+                                        <i class="fa-regular fa-thumbs-down fa-flip-horizontal" style="margin-left: 10px;" onclick="toggleIcon(this)"></i>
+                                        <span class="like-count" data-original-value="0">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CARDS - PRODUCTOS-SIMILARES -->
+
+            <section id="featured" class="my-5 pb-5">
+                <div class="container" id="product-cards">
+                    <h1 class="text-center"><strong>Productos similares</strong></h1>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-5">
+                        <div class="col">
+                            <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked" style="color: #D9D9D9;"></i>
+                                </div>
+                                <img src="/assets/img/client/Detalle-Producto/product-01.png" class="p-2 card-img-top mx-auto" alt="#">
+                                <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                    <h5 class="card-title text-start"><strong>MOCHILA PULVERIZADORA 20L PLÁSTICO AZUL Y NARANJA</strong></h5>
+                                    <p class="card-text text-start">JACTO</p>
+                                    <h5 class="precio">S/ 199.90</h5>
+                                    <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <img src="/assets/img/client/Detalle-Producto/product-02.png" class="p-2 card-img-top mx-auto" alt="#">
+                                <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                    <h5 class="card-title text-start"><strong>PULVERIZADORA 16L FUMIGADORA 
+                                        MOCHILA WADFOW MANUAL</strong></h5>
+                                    
+                                    <p class="card-text text-start">MADFOW</p>
+                                    <h5 class="precio">S/ 90.90</h5>
+                                    <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <img src="/assets/img/client/Detalle-Producto/product-03.png" class="p-2 card-img-top mx-auto" alt="#">
+                                <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                    <h5 class="card-title text-start"><strong>MOCHILA GUMIGADORA ASPERSORA 20lt</strong></h5>
+                                    
+                                    <p class="card-text text-start">GENERICO</p>
+                                    <h5 class="precio">S/ 31.99</h5>
+                                    <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                                <div class="star">
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                </div>
+                                <img src="/assets/img/client/Detalle-Producto/product-04.png" class="p-2 card-img-top mx-auto" alt="#">
+                                <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                    <h5 class="card-title text-start"><strong>PULVERIZADOR PRESIÓN POLIETILENO 
+                                        POLIPROPILENO 5L</strong></h5>
+                                    <p class="card-text text-start">GENERICO</p>
+                                    <h5 class="precio">S/ 25.99</h5>
+                                    <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARDS - PRODUCTOS-SIMILARES -->
+
+        <!-- BODY PAGINA-->
+        
+        </div>
+        
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Te ayudamos</h4>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-book-open"></i> Libro de reclamaciones</a></li>
+                            <li><a href=""><i class="fa-brands fa-whatsapp"></i> Atención por WhatsApp</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone-volume"></i> Centro de ayuda</a></li>
+                            <li><a href=""><i class="fa-solid fa-truck-fast"></i> Tipos de entrega</a></li>
+                            <li><a href=""><i class="fa-solid fa-rotate-left"></i> Cambios y devoluciones</a></li>
+                            <li><a href=""><i class="fa-regular fa-clipboard"></i> Seguimiento de mi orden</a></li>
+                            <li><a href=""><i class="fa-solid fa-wallet"></i> Boletas y facturas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Sé parte de SiderSof.com</h4>
+                        <ul>
+                            <li><a href="">Vende con nosotros</a></li>
+                            <li><a href="">Trabaja con nosotros</a></li>
+                            <li><a href="">Venta empresa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Únete a nuestros programas</h4>
+                        <ul>
+                            <li><a href="">Cyber WOW 2024</a></li>
+                            <li><a href="">Hot Sale</a></li>
+                            <li><a href="">Black Friday</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Nuestras empresas</h4>
+                        <ul>
+                            <li><a href="">Ferreteria Jireh</a></li>
+                            <li><a href="">Ferreteria El Principe</a></li>
+                            <li><a href="">Ferrechincha</a></li>
+                            <li><a href="">Ferreteria F Y R Union</a></li>
+                            <li><a href="">Ferreteria y Printuras Guille's</a></li>
+                            <li><a href="">Ferreteria Don Ricardo</a></li>
+                            <li><a href="">SiderSof</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bajo" style="background: #E39600; padding-top: 10px;">
+            <div class="container mx-auto">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <a href=""><i style="font-size: 35px;" class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Términos y condiciones</a></div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de cookies</a></div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de privacidad</a></div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <div class="copyright">
+                    &copy; TODOS LOS DERECHOS RESERVADOS
+                </div>
+                <div class="credits">
+                    Brilark.com S.A.C. Maz C. Lot. 13 OTR. Upis San Andres - Ica, Chincha, Pueblo Nuevo
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--FUNCTION - CAMBIAR DE IMAGEN PRODUCTOS ONCLICK-->
+
+    <script>
+        var MainImg = document.getElementById('MainImg');
+        var smalling = document.getElementsByClassName('small-img');
+
+        smalling[0].onclick = function(){
+            MainImg.src = smalling[0].src;
+        }
+        smalling[1].onclick = function(){
+            MainImg.src = smalling[1].src;
+        }
+        smalling[2].onclick = function(){
+            MainImg.src = smalling[2].src;
+        }
+        smalling[3].onclick = function(){
+            MainImg.src = smalling[3].src;
+        }
+
+    </script>
+
+    <!-- FUNCTION - CAMBIAR ICONO LIKE -->
+    <script>
+        function toggleIcon(icon) {
+            // Selecciona el elemento del conteo
+            const countSpan = icon.nextElementSibling;
+            const originalValue = parseInt(countSpan.getAttribute('data-original-value'));
+            let currentValue = parseInt(countSpan.textContent);
+            // Cambia el icono y ajusta el conteo
+            if (icon.classList.contains('fa-regular')) {
+                icon.classList.remove('fa-regular');
+                icon.classList.add('fa-solid');
+                countSpan.textContent = currentValue + 1; // Aumenta el conteo
+            } else {
+                icon.classList.remove('fa-solid');
+                icon.classList.add('fa-regular');
+                countSpan.textContent = originalValue; // Restaura el valor original
+            }
+        }
+    </script>
+
+    <!-- FUNCTION - CANTIDAD DE UNIDAD A COMPRAR -->
+    <script>
+        function increment(icon) {
+            const countSpan = icon.nextElementSibling;
+            let currentValue = parseInt(countSpan.textContent);
+    
+            if (currentValue < 999) {  // Condición para limitar el valor máximo
+                countSpan.textContent = currentValue + 1;
+            }
+        }
+    
+        function decrement(icon) {
+            const countSpan = icon.previousElementSibling;
+            let currentValue = parseInt(countSpan.textContent);
+    
+            if (currentValue > 0) {  // Condición para evitar números negativos
+                countSpan.textContent = currentValue - 1;
+            }
+        }
+    </script>
+
+
+    <!--FUNCTION - ZOOM A LOS PRODUCTOS CON MOUSE
+    <script>
+        let imageZoom = document.getElementById('imageZoom');
+        imageZoom.addEventListener('mousemove', (event) => {
+            imageZoom.style.setProperty('--display', 'block');
+            let pointer = {
+                x: (event.offsetX * 100) / imageZoom.offsetWidth,
+                y: (event.offsetY * 100) / imageZoom.offsetHeight
+            }
+            imageZoom.style.setProperty('--zoom-x', pointer.x + '%');
+            imageZoom.style.setProperty('--zoom-y', pointer.y + '%');
+        })
+        imageZoom.addEventListener('mouseout', () => {
+            imageZoom.style.setProperty('--display', 'none');
+        })
+    </script> -->
+    <script>
+        const preview = document.querySelector('.preview');
+        const mainImg = document.getElementById('MainImg');
+
+        // Función para calcular la escala inicial basada en el tamaño del contenedor y de la imagen original
+        function setInitialBackgroundScale() {
+            const img = new Image();
+            img.src = mainImg.src;
+
+            img.onload = () => {
+                const containerWidth = preview.offsetWidth;
+                const containerHeight = preview.offsetHeight;
+                const scaleWidth = (img.width / containerWidth) * 100;
+                const scaleHeight = (img.height / containerHeight) * 100;
+
+                // Establecer escala inicial para que coincida con las dimensiones originales
+                preview.style.setProperty('--background-scale', `${scaleWidth}% ${scaleHeight}%`);
+            };
+        }
+
+        // Evento para aplicar zoom al mover el mouse dentro de la imagen
+        preview.addEventListener('mousemove', (event) => {
+            const rect = preview.getBoundingClientRect();
+            const x = ((event.clientX - rect.left) / rect.width) * 100;
+            const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+            preview.style.setProperty('--zoom-x', `${x}%`);
+            preview.style.setProperty('--zoom-y', `${y}%`);
+            preview.style.setProperty('--display', 'block');
+            preview.style.setProperty('--background-scale', '200%'); // Escalar al 200% al activar zoom
+        });
+
+        // Evento para desactivar zoom al salir de la imagen
+        preview.addEventListener('mouseleave', () => {
+            preview.style.setProperty('--display', 'none');
+            setInitialBackgroundScale(); // Restaurar escala inicial al desactivar zoom
+        });
+
+        // Cambiar la imagen principal al hacer clic en las imágenes pequeñas
+        const smallImgs = document.querySelectorAll('.small-img');
+        smallImgs.forEach((img) => {
+            img.addEventListener('click', () => {
+                mainImg.src = img.src;
+                preview.style.setProperty('--url', `url('${img.src}')`);
+                setInitialBackgroundScale(); // Actualizar la escala inicial para la nueva imagen
+            });
+        });
+
+        // Configurar la escala inicial cuando se cargue la página
+        setInitialBackgroundScale();
+    </script>
+
+
+    <!--FUNCITION - Añadir al producto Incrementa la cantidad al icono-->
+    <script>
+        // Variable para contar los productos en el carrito
+        let cartItemCount = 0;
+    
+        // Función para incrementar el contador
+        function addToCart() {
+            cartItemCount++;
+            const cartCountElement = document.getElementById('cart-count');
+            cartCountElement.textContent = cartItemCount; // Actualizar el número
+            cartCountElement.classList.remove('d-none'); // Mostrar el contador
+        }
+    
+        // Añadir evento al botón de "Agregar al Carro"
+        const addToCartButtons = document.querySelectorAll('button[type="button"]');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.preventDefault(); // Previene comportamiento predeterminado si es necesario
+                addToCart();
+            });
+        });
+    </script>
+
+</body>
+</html>

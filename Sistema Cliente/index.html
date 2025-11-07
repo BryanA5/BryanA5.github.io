@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDERSOFT</title>
+    <link rel="shortcut icon" type="image" href="/assets/img/client/Logo2.png">
+    <link rel="stylesheet" href="/assets/css/client/style.css">
+    <!--<link rel="stylesheet" href="/assets/libs/font-awesome/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- bootstrap links-->
+    <link href="/assets/libs/bootstrap/bootstrapcliente.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap-icons-cliente.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap links-->
+    <!-- Fuentes (inter) links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/assets/libs/font-awesome/css2.css" rel="stylesheet">
+    <!-- Fuentes (inter) links-->
+</head>
+<body>
+        <div class="home-section">
+
+        
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/Sistema Cliente/index.html"><img src="/assets/img/client/Logo.png" width="200px" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Barra busqueda -->
+                        <div class="box ms-auto d-none d-lg-block">
+                            <div class="search-box">
+                                <form class="d-flex" id="search-box">
+                                    <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                    <label class="icon">
+                                        <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Barra busqueda -->
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <!-- Inicio sesion -->
+                            <li class="nav-item dropdown Naviniciosesion">
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hola,<br> <strong>Inicia sesión</strong>
+                                </a>
+                                <a class="nav-link dropdown-toggle d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-top: 1px solid rgba(0, 0, 0, 0.1);" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hola, Inicia sesión
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffff;">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</a></li>
+                                </ul>
+                            </li>
+                            <!-- Inicio sesion -->
+                            
+
+                            <!-- Ubicacion -->
+                            <li class="nav-item d-none d-lg-block Navubicacion">
+                                <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    <label>
+                                        <i style="font-size: 45px; margin-top: 4%; cursor: pointer;" class="fa-solid fa-location-dot"></i>
+                                    </label>
+                                    <label class="prueba" style="cursor: pointer; margin-left: 5px;">Selecciona<br> <strong>tu ubicación</strong></label> 
+                                </a>
+                            </li> 
+                            <li class="nav-item d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Selecciona tu ubicación</a>
+                            </li>
+                            <!-- Ubicacion -->
+
+                            
+                            <!-- Cuenta Icon -->
+                            <li class="nav-item dropdown Navcuenta">
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" id="navbarDropdown" role="button" aria-expanded="false" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i style="font-size: 45px; margin-top: 4%;" class="fa-solid fa-circle-user"></i>
+                                </a>
+                                <a class="nav-link dropdown-toggle d-block d-sm-none" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);" href="#" id="navbarDropdown" role="button"  aria-expanded="false" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    Cuenta
+                                </a>
+                            </li>
+                            
+                            <!-- Cuenta Icon -->
+                            
+                            <!-- Carrito -->
+                            
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                        <i style="font-size: 42px; margin-top: 6%;" class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-block d-sm-none">
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Carrito de compras</a>
+                                </li>
+                            
+                            <!-- Carrito -->
+                        </ul> 
+                        <!-- Barra busqueda Responsive-->
+                        <div class="box ms-auto d-block d-sm-none" style="margin-top: 2%;">
+                            <div class="search-box">
+                                <form class="d-flex" id="search-box">
+                                    <input class="form-control me-2 shadow-none" type="search" placeholder="Buscar" aria-label="Search">
+                                    <label  class="icon">
+                                        <a style="color: white;" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </label>
+                                </form>
+                            </div>
+                        </div> 
+                        <!-- Barra busqueda Responsive-->
+                    </div>
+                </div>
+            </nav>
+            <!-- NAVBAR -->
+
+            <!-- MENU START -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="MenuStart">
+                <!-- NAV CONTAINER START -->
+                <div class="container-fluid bg-light">
+                    <div class="container-fluid bg-light position-relative">
+                        <!-- NAV BUTTON  -->
+                        <div class="d-flex justify-content-between align-items-center p-2">
+                            <!-- NAV BUTTON (A la izquierda) -->
+                            <div class="d-flex align-items-center">
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" style="color: black;">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                                <span class="ms-3 menu-text"><strong>Menu</strong></span>
+                            </div>
+                
+                            <!-- OTRAS OPCIONES (centradas y siempre horizontales) -->
+                            <div class="flex-grow-1 d-flex justify-content-center">
+                                <a href="#" class="mx-4 text-decoration-none opcion-nav" style="color: black;"><i class="fa-solid fa-certificate"></i><strong> Ofertas Especiales</strong></a>
+                                <a href="#" class="mx-4 text-decoration-none text-black opcion-nav" style="color: black;"><i class="fa-solid fa-star"></i><strong> Nuevos Lanzamientos</strong></a>
+                            </div>
+                        </div>
+                    </div>
+        
+                
+                    <!-- Offcanvas para el menú de categorías -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="menuLateralLabel">¡Hola, Usuario!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu1">Tornillería<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu2">Cerrajería y Candado<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Accesorios para autos<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Aceites, grasos y lubricantes<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Herramientas manuales<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Brocas, discos, lijas y cierras<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Cintas<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3"> Construcción<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Aditivos y pegamentos<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Accesorios de ferreteria<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Limpieza y desinfección<i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="category-link d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" data-bs-target="#subMenu3">Dados y puntas<i class="bi bi-chevron-right"></i></a></li>
+                                <!-- Agrega más categorías según lo necesites -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Offcanvas para el submenú de empresas (Subcategoría de Tornillería) -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="subMenu1" aria-labelledby="subMenu1Label">
+                        <div class="offcanvas-header">
+                            <div class="col-md-9 align-items-center conten_cabezera">
+                                <h5 id="subMenu1Label">Oportunidades Únicas</h5>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="company-list">
+                                <div class="company">
+                                    <h6>Ferrechinca</h6>
+                                    <a href="#">Philips</a>
+                                    <a href="#">3M</a>
+                                    <a href="#">Trebol</a>
+                                    <a href="#">Anypsa</a>
+                                    <a href="#">Truper</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria El Principe</h6>
+                                    <a href="#">Celima</a>
+                                    <a href="#">Tekno</a>
+                                    <a href="#">Soldimix</a>
+                                    <a href="#">Euroturbo</a>
+                                    <a href="#">Chema</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria F y R Union</h6>
+                                    <a href="#">DeWalt</a>
+                                    <a href="#">Stanley</a>
+                                    <a href="#">Pretul</a>
+                                    <a href="#">Truper</a>
+                                    <a href="#">ItalGriff</a>
+                                </div>
+                                <!-- Agrega más empresas según lo necesites -->
+                                <div class="company">
+                                    <h6>Ferretera Cerro Fortaleza</h6>
+                                    <a href="#">Eternit</a>
+                                    <a href="#">Cantol</a>
+                                    <a href="#">Brosch</a>
+                                    <a href="#">Evans</a>
+                                    <a href="#">Euroluz</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Q & S Hermanos</h6>
+                                    <a href="#">Sika</a>
+                                    <a href="#">3M</a>
+                                    <a href="#">Soldimix</a>
+                                    <a href="#">Trebol</a>
+                                    <a href="#">Chema</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Abarca</h6>
+                                    <a href="#">Stanley</a>
+                                    <a href="#">Eternit</a>
+                                    <a href="#">Evans</a>
+                                    <a href="#">Philips</a>
+                                    <a href="#">Anypsa</a>
+                                </div>
+                                <!-- Agrega más empresas según lo necesites -->
+                                <div class="company">
+                                    <h6>Conecsa Distribuidores S.A</h6>
+                                    <a href="#">Terkno</a>
+                                    <a href="#">Celima</a>
+                                    <a href="#">Pretul</a>
+                                    <a href="#">ItalGriff</a>
+                                    <a href="#">Brosch</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Florcita</h6>
+                                    <a href="#">Truper</a>
+                                    <a href="#">Euroturbo</a>
+                                    <a href="#">DeWalt</a>
+                                    <a href="#">Cantol</a>
+                                    <a href="#">Evans</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferricenter Leon</h6>
+                                    <a href="#">Sika</a>
+                                    <a href="#">Eternit</a>
+                                    <a href="#">Stanley</a>
+                                    <a href="#">Chema</a>
+                                    <a href="#">Soldimix</a>
+                                </div>
+                                <!-- Agrega más empresas según lo necesites -->
+                                <div class="company">
+                                    <h6>Ferreteria Don Ricardo</h6>
+                                    <a href="#">Trebol</a>
+                                    <a href="#">3M</a>
+                                    <a href="#">Philips</a>
+                                    <a href="#">Anypsa</a>
+                                    <a href="#">Tekno</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Ferreteria Gianima</h6>
+                                    <a href="#">Celima</a>
+                                    <a href="#">Pretul</a>
+                                    <a href="#">ItalGriff</a>
+                                    <a href="#">Bosch</a>
+                                    <a href="#">EuroLuz</a>
+                                </div>
+                                <div class="company">
+                                    <h6>Multipernos Sercosev</h6>
+                                    <a href="#">Truper</a>
+                                    <a href="#">Euroturbo</a>
+                                    <a href="#">DeWalt</a>
+                                    <a href="#">Cantol</a>
+                                    <a href="#">Pretur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- OFFCANVAS MAIN CONTAINER END  -->
+                </div>
+            </nav>
+            <!-- MENU START -->
+
+            <!-- Carousel - Anuncios -->
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active c-item">
+                        <img src="/assets/img/client/A1.jpg" class="d-block w-100 c-img" alt="...">
+                    </div>
+                    <div class="carousel-item c-item">
+                        <img src="/assets/img/client/Panel-Publicitario-1.jpg" class="d-block w-100 c-img" alt="...">
+                    </div>
+                </div>
+            </div>
+            <!--Carousel - Anuncios -->
+
+
+            <!-- CATEGORIAS -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-cols-3 row-cols-lg-6 g-2 g-lg-3" style="margin-top: auto;">
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ"><img src="/assets/img/client/Categorias/cat-1-tornilleria.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Tornilleria</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-2-cerrajeria.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Cerrajería y Candado</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-3-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Accesorios para autos</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-4-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Aceites, grasos y lubricantes</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-5-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Herramientas manuales</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-6-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Brocas, discos, lijas y cierras</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-3 row-cols-lg-6 g-2 g-lg-3" style="margin-top: auto;">
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ"><img src="/assets/img/client/Categorias/cat-7-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Cintas</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-8-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Construcción</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-9-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Aditivos y pegamentos</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-10-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Accesorios de ferreteria</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-11-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Limpieza y desinfección</small></p>
+                                    </a>
+                                </div>
+                                <div class="col cat-card">
+                                    <a href="#">
+                                        <div class="p-2 border bg-light rounded-circle mx-auto categ" ><img src="/assets/img/client/Categorias/cat-12-image.png" style="padding: auto;" alt=""></div>
+                                    <p class="h6 text-center"><small>Dados y puntas</small></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- CATEGORIAS -->
+
+            <!-- CARDS - BENEFICIOS -->
+            <div class="container" id="beneficios-cards">
+                <h1 class="text-center"><strong>Beneficios para ti</strong></h1>
+                <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                    <div class="col">
+                        <div class="card">
+                            <img src="/assets/img/client/Beneficios-Icons/Icon-01.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Ferreterias cercanas</strong></h5>
+                                <p class="card-text text-center">Consulta nuestras mas de 100 ferreterias a nivel nacional</p>
+                                <a href="#"><strong>Ver más ></strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/assets/img/client/Beneficios-Icons/Icon-02.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Cambios y devoluciones</strong></h5>
+                                <p class="card-text text-center">Cuenta con 15 días para cambios y devoluciones</p>
+                                <a href="#"><strong>Ver más ></strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/assets/img/client/Beneficios-Icons/Icon-03.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Servicios SiderSof</strong></h5>
+                                <p class="card-text text-center">Descubre nuestros servicios para ti</p>
+                                <a href="#"><strong>Ver más ></strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/assets/img/client/Beneficios-Icons/Icon-04.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Compra y retira</strong></h5>
+                                <p class="card-text text-center">Paga de manera segura en nuestra tienda online</p>
+                                <a href="#"><strong>Ver más ></strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/assets/img/client/Beneficios-Icons/Icon-05.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Despacho al instante</strong></h5>
+                                <p class="card-text text-center">Compra rápido, seguro y sin salir de casa</p>
+                                <a href="#"><strong>Ver más ></strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARDS - BENEFICIOS -->
+
+            <!-- CARDS - MARCAS -->
+            <div class="container" id="marcas-cards">
+                <h1 class="text-center"><strong>Nuestras marcas exclusivas</strong></h1>
+                <div class="container">
+                    <div class="row row-cols-3 row-cols-lg-6 g-2 g-lg-3">
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-01.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Tornilleria</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-02.png" alt="" style="width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Anypsa</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-03.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Tekno</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-04.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Celima</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-05.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Petrul</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-06.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>ItalGriff</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-07.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Bosch</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-08.png" alt="" style="width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>EuroLuz</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-09.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>3M</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-10.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Trebol</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-11.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Soldimix</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-12.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Chema</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-13.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Stanley</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-14.png" alt="" style="width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Eternit</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-15.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Evans</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-16.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Sika</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-17.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Truper</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-18.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Eurotubo</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-19.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>DeWalt</small></p>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 border bg-light bg-transparent border-0"><img src="/assets/img/client/Marcas/marca-20.png" alt="" style="max-width: 100%; height: 100%;"></div>
+                            <p class="h6 text-center"><small>Cantol</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARDS - MARCAS -->
+
+            <!-- CARDS - PRODUCTOS -->
+            <div class="container" id="product-cards">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-5">
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked" style="color: #D9D9D9;"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-01.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>AMARRADOR DE COLUMNAS (TORTOL) CON GRIP</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 45.50</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-02.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>COMBA OCTAGONAL 4LB, MANGO DE 
+                                    FIBRA DE VIDRIO 14``</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 55.25</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-03.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>PULVERIZADOR FUMIGADOR 20L
+                                    POLIETILENO, POLIPROPILENO 43X59 cm</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 255.95</h5>
+                                <a href="detalleproducto01.html" class="btn btn-primary border-0 d-grid gap-3 rounded-pill shadow-none"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-04.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>BADILEJO SOLDADO</strong></h5>
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 18.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked" style="color: #D9D9D9;"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-05.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>AMARRADOR DE COLUMNAS (TORTOL) CON GRIP</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 24.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-06.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>ALICATE 8`` PELA CABLES AUTOMÁTICA 22 A 10 AWG</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 45.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-07.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>ALICATE UNIVERSAL 8`` MANGO COM
+                                    FORT GRIP </strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 25.80</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-08.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>CANDADO DE HIERRO ARCO LARGO </strong></h5>
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 30.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked" style="color: #D9D9D9;"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-09.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>CORTADOR DE TUBO DE PLÁSTICO 
+                                    CAPACIDAD CORTE 1-5/8``</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 37.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-10.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>JUEGO DE 6 BROCAS PALETA PARA 
+                                    MADERA </strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 45.79</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-11.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>WINCHA 5 M CINTA 19 MM</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 31.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-12.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>ISCO TIPO 41 DE 9`` X 2 MM CORTE 
+                                    FINO DE METALD</strong></h5>
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 25.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked" style="color: #D9D9D9;"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-13.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>BOLSA CON 2 CARBONES DE REPUESTO
+                                    PARA CM-14N </strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 14.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-14.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>BARRA DE CONSTRUCCION / FIERRO 
+                                    ASTM A615/A706 GR 60 x 9 M</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 25.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-15.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>MANGUERA 1/2`` 3 CAPAS</strong></h5>
+                                
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 124.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card " style="border-top: 0;box-shadow: 0 4px 3px -1px rgb(168, 168, 168);">
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                            </div>
+                            <img src="/assets/img/client/Productos/product-16.png" class="p-2 card-img-top mx-auto" alt="#">
+                            <div class="card-body" style="border-top: 1px solid rgb(243, 243, 243);">
+                                <h5 class="card-title text-start"><strong>PISTOLA PARA RIEGO DE 8 FUNCIONES 
+                                    PLÁSTICA CON RECUBRIMIENTO</strong></h5>
+                                <p class="card-text text-start">TRUPER</p>
+                                <h5 class="precio">S/ 65.99</h5>
+                                <a href="#" class="btn btn-primary border-0 d-grid gap-3 rounded-pill"><strong>Ver Producto</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARDS - PRODUCTOS -->
+
+            <!-- UBICACIONES - IMAGENES-->
+            <div id="carouselUbicaciones" class="carousel slide" data-bs-ride="carousel" style="margin-top: 30px;">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-01.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-02.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-03.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-04.png" style="width: 100%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-01.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-02.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-03.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-04.png" style="width: 100%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-01.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-02.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-03.png" style="width: 100%;" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/img/client/ubicacion-04.png" style="width: 100%;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselUbicaciones" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselUbicaciones" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+            <!-- UBICACIONES - IMAGENES-->
+
+
+
+        <!-- MODAL - LOGIN -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 side-image">
+                        
+                                <!-------------      image     ------------->
+                                
+                            </div>
+                            <div class="col-md-6 right">
+                                
+                                <div class="input-box"> 
+                                
+                                    <header>
+                                        Login
+                                        <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="font-size: 15px;margin-top: 25px;margin-right: 25px;"></button>
+                                    </header>
+                                    <div id="emailHelp" class="form-text textoPrueba">Ingresa tu correo electronico y tu contraseña para acceder a tu cuenta</div>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                                            <input type="email" class="form-control shadow-none" id="exampleInputEmail1" placeholder="Ingresa tu Correo Electronico" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Ingresa tu Contraseña">
+                                        </div> 
+                                        <a href="../Sistema Cliente/sesion_iniciada.html">
+                                            <button type="button" class="button">Ingresar</button>
+                                        </a>
+                                        
+                                        
+                                        <div class="mb-3 form-check">
+                                            <span>¿No tienes una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#registermodal">Registrate aqui</a></span>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <!-- MODAL - LOGIN -->
+
+        <!-- MODAL - REGISTER -->
+        <div class="modal fade" id="registermodal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 side-image">
+                    
+                            <!-------------      image     ------------->
+                            
+                        </div>
+                        <div class="col-md-6 right">
+                            
+                            <div class="input-box"> 
+                            
+                                <header>
+                                    Registro
+                                    <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="font-size: 15px;margin-top: 25px;margin-right: 25px;"></button>
+                                </header>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nombres y Apellidos</label>
+                                        <input class="form-control" type="text" placeholder="Ingresa tus nombres y apellidos" aria-label="default input example">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                                        <input type="email" class="form-control shadow-none" id="exampleInputEmail1" placeholder="Ingresa tu Correo Electronico" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Número de Celular</label>
+                                        <input class="form-control" type="text" placeholder="+51 000-000-000" aria-label="default input example">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Ingresa tu Contraseña">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Confirmar Contraseña</label>
+                                        <input type="password" class="form-control shadow-none" id="exampleInputPassword1" placeholder="Repite tu Contraseña">
+                                    </div> 
+                                    <a href="../Sistema Cliente/sesion_iniciada.html">
+                                        <button type="button" class="button">Registrar</button>
+                                    </a>
+                                    
+                                </form>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- MODAL - REGISTER -->
+
+        <!-- Modal LOGIN-->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body d-flex flex-column flex-lg-row p-0">
+                        <!-- Imagen del lado izquierdo -->
+                        <div class="login-image">
+                            <img src="/assets/img/client/LoginImagen.png" alt="Imagen de Herramientas" class="img-fluid">
+                        </div>
+                        <!-- Contenido de login del lado derecho -->
+                        <div class="login-form p-4 ">
+                            <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h2 class="text-center mb-4">Login</h2>
+                            <p class="text-center mb-4">Ingresa tu correo electronico y tu contraseña para acceder a tu cuenta</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control shadow-none" id="email" placeholder="Ingresa tu Correo Electrónico">
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="password" class="form-label d-flex justify-content-between align-items-center" style="margin-top: 30px;">
+                                        Contraseña
+                                        <a href="#" class="small text-decoration-none">¿Olvidaste la          contraseña?</a>
+                                    </label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control shadow-none" id="password" placeholder="Ingresa tu contraseña">
+                                        <span class="input-group-text" onclick="togglePassword()">
+                                        <i id="toggleIcon" class="fa fa-eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="../Sistema Cliente/sesion_iniciada.html">
+                                        <button type="button" class="btn mb-3 w-50">Ingresar</button>
+                                    </a>
+                                </div>
+                                <div class="text-center regirterlink">
+                                    ¿No tienes una cuenta? 
+                                    <a href="#" data-bs-dismiss="modal" data-bs-target="#registerModal" onclick="openRegisterModal()">Regístrate aquí</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal REGISTER-->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body d-flex flex-column flex-lg-row p-0">
+                <!-- Imagen del lado izquierdo -->
+                <div class="register-image">
+                    <img src="/assets/img/client/LoginImagen.png" alt="Imagen de Registro" class="img-fluid">
+                </div>
+                <!-- Contenido de registro del lado derecho -->
+                <div class="register-form p-4">
+                    <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2 class="text-center mb-4">Registro</h2>
+                    <p class="text-center mb-4">Crea una cuenta llenando los siguientes datos</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Nombres y Apellidos</label>
+                            <input type="text" class="form-control shadow-none" id="fullname" placeholder="Ingresa tus nombres y apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control shadow-none" id="registerEmail" placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Número de Celular</label>
+                            
+                            <div class="input-group">
+                                <span class="input-group-text toggle-password">(+51)</span>
+                                <input type="tel" class="form-control shadow-none" id="phone" placeholder="Ingresa tu número de celular"
+                                pattern="[0-9]*" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                            </div>
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <label for="registerPassword" class="form-label">Contraseña</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control shadow-none" id="registerPassword" placeholder="Ingresa tu contraseña">
+                                <span class="input-group-text" onclick="toggleRegisterPassword()">
+                                    <i id="registerToggleIcon" class="fa fa-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control shadow-none" id="confirmPassword" placeholder="Confirma tu contraseña">
+                                <span class="input-group-text" onclick="toggleConfirmPassword()">
+                                    <i id="confirmToggleIcon" class="fa fa-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn mb-3 w-50">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--SCRIPT OJO-->
+        <script>
+            // Función para mostrar/ocultar la contraseña
+            function togglePassword() {
+                const passwordInput = document.getElementById("password");
+                const toggleIcon = document.getElementById("toggleIcon");
+                if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.classList.remove("fa-eye");
+                toggleIcon.classList.add("fa-eye-slash");
+                } else {
+                passwordInput.type = "password";
+                toggleIcon.classList.remove("fa-eye-slash");
+                toggleIcon.classList.add("fa-eye");
+                }
+            }
+            //
+            function toggleRegisterPassword() {
+                const passwordInput = document.getElementById("registerPassword");
+                const icon = document.getElementById("registerToggleIcon");
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    icon.classList.remove("fa-eye");
+                    icon.classList.add("fa-eye-slash");
+                } else {
+                    passwordInput.type = "password";
+                    icon.classList.remove("fa-eye-slash");
+                    icon.classList.add("fa-eye");
+                }
+            }
+
+            function toggleConfirmPassword() {
+                const confirmPasswordInput = document.getElementById("confirmPassword");
+                const icon = document.getElementById("confirmToggleIcon");
+                if (confirmPasswordInput.type === "password") {
+                    confirmPasswordInput.type = "text";
+                    icon.classList.remove("fa-eye");
+                    icon.classList.add("fa-eye-slash");
+                } else {
+                    confirmPasswordInput.type = "password";
+                    icon.classList.remove("fa-eye-slash");
+                    icon.classList.add("fa-eye");
+                }
+            }
+
+        </script>
+
+<!--Abrir modal registar y cerrar modal-->
+<script>
+    function openRegisterModal() {
+    // Obtén el modal Register y crea una instancia
+    const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+
+    // Abre el modal Register después de asegurarte que Login está cerrado
+    registerModal.show();
+}
+</script>
+
+        </div>
+        
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Te ayudamos</h4>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-book-open"></i> Libro de reclamaciones</a></li>
+                            <li><a href=""><i class="fa-brands fa-whatsapp"></i> Atención por WhatsApp</a></li>
+                            <li><a href=""><i class="fa-solid fa-phone-volume"></i> Centro de ayuda</a></li>
+                            <li><a href=""><i class="fa-solid fa-truck-fast"></i> Tipos de entrega</a></li>
+                            <li><a href=""><i class="fa-solid fa-rotate-left"></i> Cambios y devoluciones</a></li>
+                            <li><a href=""><i class="fa-regular fa-clipboard"></i> Seguimiento de mi orden</a></li>
+                            <li><a href=""><i class="fa-solid fa-wallet"></i> Boletas y facturas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Sé parte de SiderSof.com</h4>
+                        <ul>
+                            <li><a href="">Vende con nosotros</a></li>
+                            <li><a href="">Trabaja con nosotros</a></li>
+                            <li><a href="">Venta empresa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Únete a nuestros programas</h4>
+                        <ul>
+                            <li><a href="">Cyber WOW 2024</a></li>
+                            <li><a href="">Hot Sale</a></li>
+                            <li><a href="">Black Friday</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Nuestras empresas</h4>
+                        <ul>
+                            <li><a href="">Ferreteria Jireh</a></li>
+                            <li><a href="">Ferreteria El Principe</a></li>
+                            <li><a href="">Ferrechincha</a></li>
+                            <li><a href="">Ferreteria F Y R Union</a></li>
+                            <li><a href="">Ferreteria y Printuras Guille's</a></li>
+                            <li><a href="">Ferreteria Don Ricardo</a></li>
+                            <li><a href="">SiderSof</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bajo" style="background: #E39600; padding-top: 10px;">
+            <div class="container mx-auto">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <a href=""><i style="font-size: 35px;" class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i style="font-size: 35px; margin-left: 3%;" class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Términos y condiciones</a></div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de cookies</a></div>
+                    <div class="col-lg-3 col-md-6"><a style="color: white; text-decoration: none;" href="">Política de privacidad</a></div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <div class="copyright">
+                    &copy; TODOS LOS DERECHOS RESERVADOS
+                </div>
+                <div class="credits">
+                    Brilark.com S.A.C. Maz C. Lot. 13 OTR. Upis San Andres - Ica, Chincha, Pueblo Nuevo
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- Footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
