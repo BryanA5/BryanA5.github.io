@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* home section */
+.home-section{
+    width: 100%;
+    min-height: 100vh; /* Cambiado a min-height para ajustarse al contenido */
+    padding-bottom: 100px; /* Espacio para evitar colisión con el footer */
+    background-color: #F0F0F0;
+}
+
+/* navbar */
+#navbar{
+    background-color: #FFA800;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 2px 5px;
+}
+
+/* LINEAS SEPARADORAS - NAVBAR*/
+#narbar li,.Naviniciosesion{
+    border-right: 2px solid #000000;
+}
+
+#narbar li,.Navubicacion{
+    border-right: 2px solid #000000;
+}
+
+#narbar li,.Navcuenta{
+    border-right: 2px solid #000000;
+}
+
+@media (max-width:991px){
+    #narbar li,.Naviniciosesion{
+        border-right: none;
+    }
+    
+    #narbar li,.Navubicacion{
+        border-right: none;
+    }
+    
+    #narbar li,.Navcuenta{
+        border-right: none;
+    }
+}
+
+/* LETRAS */
+#navbar .nav-link{
+    color: rgb(0, 0, 0);
+    font-weight: medium;
+    margin-left: 5px;
+}
+/* Puntero a las letras efecto */
+#navbar .nav-link:hover{
+    color: white;
+    border-radius: 5px;
+}
+/* Opciones de barra*/
+.dropdown li a{
+    color: rgb(0, 0, 0);
+}
+
+/* Barra Busqueda */
+#navbar .box{
+    max-width: 700px;   
+    width: 100%;
+}
+
+.box .search-box{
+    position: relative;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.search-box input{
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.search-box .icon{
+    cursor: pointer;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: #000000;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+@media (max-width:1420px){
+    #navbar .nav-link .prueba{
+        display: none;
+    }
+}
+
+
+
+
+
+/* footer */
+
+#footer{
+    padding: 0 0 0 0;
+    color: #fff;
+    font-size: 14px;
+    background: #FFA800;
+    font-family: "Inter", sans-serif;
+}
+
+#footer .footer-top{
+    padding: 30px 0 0;
+    background: #FFA800;
+    color: white;
+}
+
+#footer .footer-top h4{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+    color: white;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul li{
+    padding-right: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child{
+    padding: 0;
+}
+
+#footer .footer-top .footer-links ul li a{
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+}
+
+#footer .footer-top .footer-links ul li a:hover{
+    border-radius: 5px;
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+
+#footer .copyright{
+    font-weight: lighter;
+    font-size: 12px;
+    line-height: 1;
+    /* float: left; */
+}
+
+#footer .credits{
+    /*float: right; */
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+#footer .footer-bajo a{
+    color: white;
+}
+
+#footer .footer-bajo a:hover{
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+/* navbar-categoria */
+#navbar-categoria{
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 2px 5px;
+}
+
+#navbar-categoria .text{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+
+
+/* NAVBAR MENU START*/
+
+/* Ancho fijo para el menú de categorías */
+#menuLateral {
+    width: 250px; /* Ancho del menú de categorías */
+}
+
+#menuLateral .offcanvas-header{
+    background: #EEEDED;
+    border-top: 6px solid #FFC107;
+}
+
+#menuLateral .offcanvas-header button{
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+/* Ancho mayor para el submenú de empresas para mostrar 3 columnas */
+#subMenu1 {
+    width: 700px; /* Ancho suficiente para mostrar 3 empresas en cada fila */
+}
+
+/* Estilos generales */
+.offcanvas-body ul li {
+    padding: 0.5rem 0;
+}
+
+.category-link {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid transparent;
+}
+
+.category-link:hover {
+    background-color: #f0f0f0;
+    border-left: 4px solid #ffa500; /* Cambia el color según tus necesidades */
+}
+
+/* OPCIONES DE EMPRESAS*/
+
+#subMenu1 .conten_cabezera{
+    background: rgb(255,168,0);
+    background: linear-gradient(90deg, rgba(255,168,0,1) 0%, rgba(255,216,142,1) 100%);
+    padding: 1%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 50px;
+}
+
+#subMenu1Label{
+    color: white;
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    position: relative;
+    padding-left: 15%;
+}
+
+/* Ajustes para mostrar tres columnas de empresas */
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaciado entre las columnas */
+}
+
+/* Flexbox para las empresas dentro de cada fila */
+.company {
+    flex: 1 1 30%; /* Ajustamos para que ocupe 30% del espacio, permitiendo tres columnas */
+}
+
+/* Estilos de la empresa */
+.company h6 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+
+.company a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 0.25rem;
+    font-size: 13px;
+}
+
+.company a:hover {
+    color: #ffa500; /* Color de hover para enlaces */
+}
+
+@media (max-width: 768px) {
+    .company {
+        flex: 1 1 45%; /* Dos columnas para pantallas más pequeñas */
+    }
+    #subMenu1 .conten_cabezera{
+        background: rgb(255,168,0);
+        background: linear-gradient(90deg, rgba(255,168,0,1) 0%, rgba(255,216,142,1) 100%);
+        padding: 1%;
+        width: 280px;
+    }
+    
+    #subMenu1Label{
+        color: white;
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        font-weight: bolder;
+        position: relative;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .company {
+        flex: 1 1 100%; /* Una columna para pantallas muy pequeñas */
+    }
+}
+
+/* SideBar MENU START */
+
+
+
+#MenuStart{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+
+#MenuStart .menu-text{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width:991px){
+    #MenuStart .opcion-nav{
+        font-size: 10px;
+        flex-wrap:nowrap
+    }
+    #MenuStart .menu-text{
+        font-size: 10px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+/* CONTENEDOR - NOMBRE CUENTA */
+
+.user-info {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 3px -1px rgb(168, 168, 168);
+}
+
+.CuentaConteiner h2{
+    padding-bottom: 30px;
+    font-family: "Inter", sans-serif;
+}
+
+/* OPCIONES CUENTA*/
+
+.sidebar {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 3px -1px rgb(168, 168, 168);
+}
+
+.CuentaConteiner .row .sidebar .nav-link {
+    color: #333;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(202, 202, 202, 0.45); 
+    height: 65px;
+    align-content: center;
+}
+
+.CuentaConteiner .row .sidebar .nav-link:hover{
+    background: #ededed;
+}
+
+.sidebar .nav-link i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.sidebar .nav-link .bi-chevron-right{
+    font-size: 13px;
+}
+
+.CuentaConteiner .row .sidebar .active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.CuentaConteiner .row .sidebar .active:hover{
+    background-color: #333;
+}
+
+/* CONTENEDOR DATOS */
+
+.content-section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.input-group .form-control {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+.input-group .form-control:focus {
+    border-color: inherit; /* Esto mantiene el color original del borde */
+    box-shadow: none; /* Quita cualquier sombra en el estado de foco */
+    outline: none;  /* Quita el contorno predeterminado */
+    border-bottom: 1px solid #CED4DA; 
+}
+
+.input-group .toggle-password {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #CED4DA;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.input-group .toggle-password:hover{
+    background: transparent;
+    color: #6C757D;
+    border-bottom: 1px solid #CED4DA;
+}
+
+.password-requirements {
+    font-size: 0.85rem;
+}
+
+.CuentaConteiner .row .botoncontenedor {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.botoncontenedor button{
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.botoncontenedor button:hover{
+    background: #FFC107;
+    border: 1px solid #FFC107;
+}
+
+@media screen and (max-width: 991px){
+    .content-section{
+        margin-top: 50px;
+    }
+}
+
+
